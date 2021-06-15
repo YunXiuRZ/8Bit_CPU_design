@@ -1,0 +1,165 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7fba12405f20 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7fba12406090 .scope module, "Register_2B_t" "Register_2B_t" 3 2;
+ .timescale 0 0;
+v0x7fba124182a0_0 .var "clock", 0 0;
+v0x7fba12418340_0 .var "input_clear", 0 0;
+v0x7fba124183e0_0 .var "input_clock_enable", 0 0;
+v0x7fba12418490_0 .var "input_d", 1 0;
+v0x7fba12418520_0 .net "output_q", 1 0, L_0x7fba12419670;  1 drivers
+L_0x7fba12419430 .part v0x7fba12418490_0, 0, 1;
+L_0x7fba12419550 .part v0x7fba12418490_0, 1, 1;
+L_0x7fba12419670 .concat8 [ 1 1 0 0], L_0x7fba12418cd0, L_0x7fba12419340;
+S_0x7fba12406200 .scope module, "r" "Register_2B" 3 6, 4 2 0, S_0x7fba12406090;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d0";
+    .port_info 1 /INPUT 1 "d1";
+    .port_info 2 /INPUT 1 "clock";
+    .port_info 3 /INPUT 1 "clock_enable";
+    .port_info 4 /INPUT 1 "clear";
+    .port_info 5 /OUTPUT 1 "q0";
+    .port_info 6 /OUTPUT 1 "q1";
+v0x7fba124179e0_0 .net "clear", 0 0, v0x7fba12418340_0;  1 drivers
+v0x7fba12417ab0_0 .net "clock", 0 0, v0x7fba124182a0_0;  1 drivers
+v0x7fba12417b80_0 .net "clock_enable", 0 0, v0x7fba124183e0_0;  1 drivers
+v0x7fba12417c10_0 .net "d0", 0 0, L_0x7fba12419430;  1 drivers
+v0x7fba12417ca0_0 .net "d1", 0 0, L_0x7fba12419550;  1 drivers
+v0x7fba12417d70_0 .net "q0", 0 0, L_0x7fba12418cd0;  1 drivers
+v0x7fba12417e00_0 .net "q1", 0 0, L_0x7fba12419340;  1 drivers
+S_0x7fba12406420 .scope module, "f1" "FDCE" 4 6, 5 1 0, S_0x7fba12406200;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clock";
+    .port_info 2 /INPUT 1 "clock_enable";
+    .port_info 3 /INPUT 1 "clear";
+    .port_info 4 /OUTPUT 1 "q";
+L_0x7fba12418610 .functor AND 1, v0x7fba124182a0_0, v0x7fba124183e0_0, C4<1>, C4<1>;
+L_0x7fba124187a0 .functor NAND 1, L_0x7fba12419430, L_0x7fba12418610, C4<1>, C4<1>;
+L_0x7fba12418850 .functor NOT 1, L_0x7fba12419430, C4<0>, C4<0>, C4<0>;
+L_0x7fba124188c0 .functor NAND 1, L_0x7fba12418610, L_0x7fba12418850, C4<1>, C4<1>;
+L_0x7fba124189b0 .functor NAND 1, L_0x7fba124187a0, L_0x7fba12418ab0, C4<1>, C4<1>;
+L_0x7fba12418ab0 .functor NAND 1, L_0x7fba124189b0, L_0x7fba124188c0, C4<1>, C4<1>;
+L_0x7fba12418be0 .functor NOT 1, v0x7fba12418340_0, C4<0>, C4<0>, C4<0>;
+L_0x7fba12418cd0 .functor AND 1, L_0x7fba12418be0, L_0x7fba124189b0, C4<1>, C4<1>;
+v0x7fba12406690_0 .net "clear", 0 0, v0x7fba12418340_0;  alias, 1 drivers
+v0x7fba12416730_0 .net "clock", 0 0, v0x7fba124182a0_0;  alias, 1 drivers
+v0x7fba124167d0_0 .net "clock_enable", 0 0, v0x7fba124183e0_0;  alias, 1 drivers
+v0x7fba12416860_0 .net "d", 0 0, L_0x7fba12419430;  alias, 1 drivers
+v0x7fba12416900_0 .net "q", 0 0, L_0x7fba12418cd0;  alias, 1 drivers
+v0x7fba124169e0_0 .net "w1", 0 0, L_0x7fba12418610;  1 drivers
+v0x7fba12416a80_0 .net "w2", 0 0, L_0x7fba124187a0;  1 drivers
+v0x7fba12416b20_0 .net "w3", 0 0, L_0x7fba12418850;  1 drivers
+v0x7fba12416bc0_0 .net "w4", 0 0, L_0x7fba124188c0;  1 drivers
+v0x7fba12416cd0_0 .net "w5", 0 0, L_0x7fba124189b0;  1 drivers
+v0x7fba12416d60_0 .net "w6", 0 0, L_0x7fba12418ab0;  1 drivers
+v0x7fba12416e00_0 .net "w7", 0 0, L_0x7fba12418be0;  1 drivers
+S_0x7fba12416f20 .scope module, "f2" "FDCE" 4 7, 5 1 0, S_0x7fba12406200;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clock";
+    .port_info 2 /INPUT 1 "clock_enable";
+    .port_info 3 /INPUT 1 "clear";
+    .port_info 4 /OUTPUT 1 "q";
+L_0x7fba12418dc0 .functor AND 1, v0x7fba124182a0_0, v0x7fba124183e0_0, C4<1>, C4<1>;
+L_0x7fba12418e30 .functor NAND 1, L_0x7fba12419550, L_0x7fba12418dc0, C4<1>, C4<1>;
+L_0x7fba12418f20 .functor NOT 1, L_0x7fba12419550, C4<0>, C4<0>, C4<0>;
+L_0x7fba12418f90 .functor NAND 1, L_0x7fba12418dc0, L_0x7fba12418f20, C4<1>, C4<1>;
+L_0x7fba12419060 .functor NAND 1, L_0x7fba12418e30, L_0x7fba12419160, C4<1>, C4<1>;
+L_0x7fba12419160 .functor NAND 1, L_0x7fba12419060, L_0x7fba12418f90, C4<1>, C4<1>;
+L_0x7fba12419290 .functor NOT 1, v0x7fba12418340_0, C4<0>, C4<0>, C4<0>;
+L_0x7fba12419340 .functor AND 1, L_0x7fba12419290, L_0x7fba12419060, C4<1>, C4<1>;
+v0x7fba12417160_0 .net "clear", 0 0, v0x7fba12418340_0;  alias, 1 drivers
+v0x7fba124171f0_0 .net "clock", 0 0, v0x7fba124182a0_0;  alias, 1 drivers
+v0x7fba124172a0_0 .net "clock_enable", 0 0, v0x7fba124183e0_0;  alias, 1 drivers
+v0x7fba12417370_0 .net "d", 0 0, L_0x7fba12419550;  alias, 1 drivers
+v0x7fba12417400_0 .net "q", 0 0, L_0x7fba12419340;  alias, 1 drivers
+v0x7fba124174d0_0 .net "w1", 0 0, L_0x7fba12418dc0;  1 drivers
+v0x7fba12417560_0 .net "w2", 0 0, L_0x7fba12418e30;  1 drivers
+v0x7fba124175f0_0 .net "w3", 0 0, L_0x7fba12418f20;  1 drivers
+v0x7fba12417680_0 .net "w4", 0 0, L_0x7fba12418f90;  1 drivers
+v0x7fba12417790_0 .net "w5", 0 0, L_0x7fba12419060;  1 drivers
+v0x7fba12417820_0 .net "w6", 0 0, L_0x7fba12419160;  1 drivers
+v0x7fba124178c0_0 .net "w7", 0 0, L_0x7fba12419290;  1 drivers
+S_0x7fba12417ef0 .scope task, "test" "test" 3 8, 3 8 0, S_0x7fba12406090;
+ .timescale 0 0;
+v0x7fba124180c0_0 .var "CE", 1 0;
+v0x7fba12418150_0 .var "CLR", 1 0;
+v0x7fba124181e0_0 .var "D", 1 0;
+TD_Register_2B_t.test ;
+    %load/vec4 v0x7fba124181e0_0;
+    %store/vec4 v0x7fba12418490_0, 0, 2;
+    %load/vec4 v0x7fba124180c0_0;
+    %pad/u 1;
+    %store/vec4 v0x7fba124183e0_0, 0, 1;
+    %load/vec4 v0x7fba12418150_0;
+    %pad/u 1;
+    %store/vec4 v0x7fba12418340_0, 0, 1;
+    %delay 100, 0;
+    %end;
+    .scope S_0x7fba12406090;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba124182a0_0, 0, 1;
+    %vpi_call/w 3 17 "$dumpfile", "result.vcd" {0 0 0};
+    %vpi_call/w 3 18 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fba124181e0_0, 0, 2;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fba124180c0_0, 0, 2;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fba12418150_0, 0, 2;
+    %fork TD_Register_2B_t.test, S_0x7fba12417ef0;
+    %join;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fba124181e0_0, 0, 2;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x7fba124180c0_0, 0, 2;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fba12418150_0, 0, 2;
+    %fork TD_Register_2B_t.test, S_0x7fba12417ef0;
+    %join;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x7fba124181e0_0, 0, 2;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x7fba124180c0_0, 0, 2;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x7fba12418150_0, 0, 2;
+    %fork TD_Register_2B_t.test, S_0x7fba12417ef0;
+    %join;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x7fba124181e0_0, 0, 2;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x7fba124180c0_0, 0, 2;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x7fba12418150_0, 0, 2;
+    %fork TD_Register_2B_t.test, S_0x7fba12417ef0;
+    %join;
+    %vpi_call/w 3 24 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x7fba12406090;
+T_2 ;
+    %delay 25, 0;
+    %load/vec4 v0x7fba124182a0_0;
+    %inv;
+    %store/vec4 v0x7fba124182a0_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "-";
+    "Register_2B_t.v";
+    "./Register_2B.v";
+    "./FDCE.v";

@@ -1,0 +1,125 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7f8657e05640 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7f8657e057b0 .scope module, "AndGate_8B_t" "AndGate_8B_t" 3 1;
+ .timescale 0 0;
+v0x7f8657e17220_0 .var "input_a", 7 0;
+v0x7f8657e172f0_0 .var "input_b", 7 0;
+v0x7f8657e173a0_0 .net "output_z", 7 0, L_0x7f8657e18910;  1 drivers
+S_0x7f8657e05930 .scope module, "a" "AndGate_8B" 3 4, 4 1 0, S_0x7f8657e057b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /INPUT 8 "b";
+    .port_info 2 /OUTPUT 8 "z";
+L_0x7f8657e17470 .functor AND 1, L_0x7f8657e17560, L_0x7f8657e17680, C4<1>, C4<1>;
+L_0x7f8657e177a0 .functor AND 1, L_0x7f8657e17810, L_0x7f8657e178f0, C4<1>, C4<1>;
+L_0x7f8657e179d0 .functor AND 1, L_0x7f8657e17ac0, L_0x7f8657e17c50, C4<1>, C4<1>;
+L_0x7f8657e17d70 .functor AND 1, L_0x7f8657e17de0, L_0x7f8657e17f00, C4<1>, C4<1>;
+L_0x7f8657e17fe0 .functor AND 1, L_0x7f8657e18050, L_0x7f8657e18180, C4<1>, C4<1>;
+L_0x7f8657e18220 .functor AND 1, L_0x7f8657e182b0, L_0x7f8657e183f0, C4<1>, C4<1>;
+L_0x7f8657e184d0 .functor AND 1, L_0x7f8657e18580, L_0x7f8657e17ba0, C4<1>, C4<1>;
+L_0x7f8657e18760 .functor AND 1, L_0x7f8657e18b70, L_0x7f8657e18c50, C4<1>, C4<1>;
+v0x7f8657e05b40_0 .net *"_ivl_0", 0 0, L_0x7f8657e17470;  1 drivers
+v0x7f8657e15bf0_0 .net *"_ivl_11", 0 0, L_0x7f8657e178f0;  1 drivers
+v0x7f8657e15ca0_0 .net *"_ivl_12", 0 0, L_0x7f8657e179d0;  1 drivers
+v0x7f8657e15d60_0 .net *"_ivl_15", 0 0, L_0x7f8657e17ac0;  1 drivers
+v0x7f8657e15e10_0 .net *"_ivl_17", 0 0, L_0x7f8657e17c50;  1 drivers
+v0x7f8657e15f00_0 .net *"_ivl_18", 0 0, L_0x7f8657e17d70;  1 drivers
+v0x7f8657e15fb0_0 .net *"_ivl_21", 0 0, L_0x7f8657e17de0;  1 drivers
+v0x7f8657e16060_0 .net *"_ivl_23", 0 0, L_0x7f8657e17f00;  1 drivers
+v0x7f8657e16110_0 .net *"_ivl_24", 0 0, L_0x7f8657e17fe0;  1 drivers
+v0x7f8657e16220_0 .net *"_ivl_27", 0 0, L_0x7f8657e18050;  1 drivers
+v0x7f8657e162d0_0 .net *"_ivl_29", 0 0, L_0x7f8657e18180;  1 drivers
+v0x7f8657e16380_0 .net *"_ivl_3", 0 0, L_0x7f8657e17560;  1 drivers
+v0x7f8657e16430_0 .net *"_ivl_30", 0 0, L_0x7f8657e18220;  1 drivers
+v0x7f8657e164e0_0 .net *"_ivl_33", 0 0, L_0x7f8657e182b0;  1 drivers
+v0x7f8657e16590_0 .net *"_ivl_35", 0 0, L_0x7f8657e183f0;  1 drivers
+v0x7f8657e16640_0 .net *"_ivl_36", 0 0, L_0x7f8657e184d0;  1 drivers
+v0x7f8657e166f0_0 .net *"_ivl_39", 0 0, L_0x7f8657e18580;  1 drivers
+v0x7f8657e16880_0 .net *"_ivl_41", 0 0, L_0x7f8657e17ba0;  1 drivers
+v0x7f8657e16910_0 .net *"_ivl_42", 0 0, L_0x7f8657e18760;  1 drivers
+v0x7f8657e169c0_0 .net *"_ivl_46", 0 0, L_0x7f8657e18b70;  1 drivers
+v0x7f8657e16a70_0 .net *"_ivl_48", 0 0, L_0x7f8657e18c50;  1 drivers
+v0x7f8657e16b20_0 .net *"_ivl_5", 0 0, L_0x7f8657e17680;  1 drivers
+v0x7f8657e16bd0_0 .net *"_ivl_6", 0 0, L_0x7f8657e177a0;  1 drivers
+v0x7f8657e16c80_0 .net *"_ivl_9", 0 0, L_0x7f8657e17810;  1 drivers
+v0x7f8657e16d30_0 .net "a", 7 0, v0x7f8657e17220_0;  1 drivers
+v0x7f8657e16de0_0 .net "b", 7 0, v0x7f8657e172f0_0;  1 drivers
+v0x7f8657e16e90_0 .net "z", 7 0, L_0x7f8657e18910;  alias, 1 drivers
+L_0x7f8657e17560 .part v0x7f8657e17220_0, 0, 1;
+L_0x7f8657e17680 .part v0x7f8657e172f0_0, 0, 1;
+L_0x7f8657e17810 .part v0x7f8657e17220_0, 1, 1;
+L_0x7f8657e178f0 .part v0x7f8657e172f0_0, 1, 1;
+L_0x7f8657e17ac0 .part v0x7f8657e17220_0, 2, 1;
+L_0x7f8657e17c50 .part v0x7f8657e172f0_0, 2, 1;
+L_0x7f8657e17de0 .part v0x7f8657e17220_0, 3, 1;
+L_0x7f8657e17f00 .part v0x7f8657e172f0_0, 3, 1;
+L_0x7f8657e18050 .part v0x7f8657e17220_0, 4, 1;
+L_0x7f8657e18180 .part v0x7f8657e172f0_0, 4, 1;
+L_0x7f8657e182b0 .part v0x7f8657e17220_0, 5, 1;
+L_0x7f8657e183f0 .part v0x7f8657e172f0_0, 5, 1;
+L_0x7f8657e18580 .part v0x7f8657e17220_0, 6, 1;
+L_0x7f8657e17ba0 .part v0x7f8657e172f0_0, 6, 1;
+LS_0x7f8657e18910_0_0 .concat8 [ 1 1 1 1], L_0x7f8657e17470, L_0x7f8657e177a0, L_0x7f8657e179d0, L_0x7f8657e17d70;
+LS_0x7f8657e18910_0_4 .concat8 [ 1 1 1 1], L_0x7f8657e17fe0, L_0x7f8657e18220, L_0x7f8657e184d0, L_0x7f8657e18760;
+L_0x7f8657e18910 .concat8 [ 4 4 0 0], LS_0x7f8657e18910_0_0, LS_0x7f8657e18910_0_4;
+L_0x7f8657e18b70 .part v0x7f8657e17220_0, 7, 1;
+L_0x7f8657e18c50 .part v0x7f8657e172f0_0, 7, 1;
+S_0x7f8657e16f90 .scope task, "test" "test" 3 6, 3 6 0, S_0x7f8657e057b0;
+ .timescale 0 0;
+v0x7f8657e17100_0 .var "A", 7 0;
+v0x7f8657e17190_0 .var "B", 7 0;
+TD_AndGate_8B_t.test ;
+    %load/vec4 v0x7f8657e17100_0;
+    %store/vec4 v0x7f8657e17220_0, 0, 8;
+    %load/vec4 v0x7f8657e17190_0;
+    %store/vec4 v0x7f8657e172f0_0, 0, 8;
+    %delay 100, 0;
+    %end;
+    .scope S_0x7f8657e057b0;
+T_1 ;
+    %vpi_call/w 3 13 "$dumpfile", "result.vcd" {0 0 0};
+    %vpi_call/w 3 14 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x7f8657e17100_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x7f8657e17190_0, 0, 8;
+    %fork TD_AndGate_8B_t.test, S_0x7f8657e16f90;
+    %join;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7f8657e17100_0, 0, 8;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7f8657e17190_0, 0, 8;
+    %fork TD_AndGate_8B_t.test, S_0x7f8657e16f90;
+    %join;
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v0x7f8657e17100_0, 0, 8;
+    %pushi/vec4 240, 0, 8;
+    %store/vec4 v0x7f8657e17190_0, 0, 8;
+    %fork TD_AndGate_8B_t.test, S_0x7f8657e16f90;
+    %join;
+    %pushi/vec4 60, 0, 8;
+    %store/vec4 v0x7f8657e17100_0, 0, 8;
+    %pushi/vec4 102, 0, 8;
+    %store/vec4 v0x7f8657e17190_0, 0, 8;
+    %fork TD_AndGate_8B_t.test, S_0x7f8657e16f90;
+    %join;
+    %vpi_call/w 3 21 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "AndGate_8B_t.v";
+    "AndGate_8B.v";

@@ -1,0 +1,138 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7f9419606f40 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7f94196070b0 .scope module, "FDPE_t" "FDPE_t" 3 2;
+ .timescale 0 0;
+v0x7f941961ca80_0 .var "clock", 0 0;
+v0x7f941961cb30_0 .var "input_clock_enable", 0 0;
+v0x7f941961cbe0_0 .var "input_d", 0 0;
+v0x7f941961ccb0_0 .var "input_preset", 0 0;
+v0x7f941961cd60_0 .net "output_q", 0 0, L_0x7f941961d3c0;  1 drivers
+S_0x7f9419604950 .scope module, "fdpe" "FDPE" 3 5, 4 1 0, S_0x7f94196070b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "d";
+    .port_info 1 /INPUT 1 "clock";
+    .port_info 2 /INPUT 1 "clock_enable";
+    .port_info 3 /INPUT 1 "preset";
+    .port_info 4 /OUTPUT 1 "q";
+L_0x7f941961ce30 .functor AND 1, v0x7f941961ca80_0, v0x7f941961cb30_0, C4<1>, C4<1>;
+L_0x7f941961cf60 .functor NAND 1, v0x7f941961cbe0_0, L_0x7f941961ce30, C4<1>, C4<1>;
+L_0x7f941961d050 .functor NOT 1, v0x7f941961cbe0_0, C4<0>, C4<0>, C4<0>;
+L_0x7f941961d0c0 .functor NAND 1, L_0x7f941961ce30, L_0x7f941961d050, C4<1>, C4<1>;
+L_0x7f941961d190 .functor NAND 1, L_0x7f941961cf60, L_0x7f941961d290, C4<1>, C4<1>;
+L_0x7f941961d290 .functor NAND 1, L_0x7f941961d190, L_0x7f941961d0c0, C4<1>, C4<1>;
+L_0x7f941961d3c0 .functor OR 1, v0x7f941961ccb0_0, L_0x7f941961d190, C4<0>, C4<0>;
+v0x7f9419607b30_0 .net "clock", 0 0, v0x7f941961ca80_0;  1 drivers
+v0x7f941961bfc0_0 .net "clock_enable", 0 0, v0x7f941961cb30_0;  1 drivers
+v0x7f941961c060_0 .net "d", 0 0, v0x7f941961cbe0_0;  1 drivers
+v0x7f941961c0f0_0 .net "preset", 0 0, v0x7f941961ccb0_0;  1 drivers
+v0x7f941961c190_0 .net "q", 0 0, L_0x7f941961d3c0;  alias, 1 drivers
+v0x7f941961c270_0 .net "w1", 0 0, L_0x7f941961ce30;  1 drivers
+v0x7f941961c310_0 .net "w2", 0 0, L_0x7f941961cf60;  1 drivers
+v0x7f941961c3b0_0 .net "w3", 0 0, L_0x7f941961d050;  1 drivers
+v0x7f941961c450_0 .net "w4", 0 0, L_0x7f941961d0c0;  1 drivers
+v0x7f941961c560_0 .net "w5", 0 0, L_0x7f941961d190;  1 drivers
+v0x7f941961c5f0_0 .net "w6", 0 0, L_0x7f941961d290;  1 drivers
+S_0x7f941961c710 .scope task, "test" "test" 3 7, 3 7 0, S_0x7f94196070b0;
+ .timescale 0 0;
+v0x7f941961c8d0_0 .var "CE", 0 0;
+v0x7f941961c960_0 .var "D", 0 0;
+v0x7f941961c9f0_0 .var "PRE", 0 0;
+TD_FDPE_t.test ;
+    %load/vec4 v0x7f941961c960_0;
+    %store/vec4 v0x7f941961cbe0_0, 0, 1;
+    %load/vec4 v0x7f941961c8d0_0;
+    %store/vec4 v0x7f941961cb30_0, 0, 1;
+    %load/vec4 v0x7f941961c9f0_0;
+    %store/vec4 v0x7f941961ccb0_0, 0, 1;
+    %delay 100, 0;
+    %end;
+    .scope S_0x7f94196070b0;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961ca80_0, 0, 1;
+    %vpi_call/w 3 16 "$dumpfile", "result.vcd" {0 0 0};
+    %vpi_call/w 3 17 "$dumpvars" {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c960_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c8d0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f941961c9f0_0, 0, 1;
+    %fork TD_FDPE_t.test, S_0x7f941961c710;
+    %join;
+    %vpi_call/w 3 26 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x7f94196070b0;
+T_2 ;
+    %delay 25, 0;
+    %load/vec4 v0x7f941961ca80_0;
+    %inv;
+    %store/vec4 v0x7f941961ca80_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "FDPE_T.v";
+    "./FDPE.v";
