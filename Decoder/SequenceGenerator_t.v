@@ -29,7 +29,7 @@ module SequenceGenerator_t ();
 
         test(1, 1);
         test(1, 0);
-        test(1, 1);
+        test(1, 0);
         #100;
         $finish;
     end
