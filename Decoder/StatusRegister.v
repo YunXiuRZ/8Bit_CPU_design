@@ -12,7 +12,7 @@ module StatusRegister (
 );
 
 input carry, zero, clock, add, sub, bitand, clear;
-output caryy_reg, zero_reg;
+output carry_reg, zero_reg;
 wire enable;
 
 or condition(enable, add, sub, bitand);
