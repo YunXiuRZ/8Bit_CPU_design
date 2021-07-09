@@ -1,10 +1,10 @@
-`include "Inverter_8B.v"
-module Inverter_8B_t ();
+`include "BitWiseInverter_8B.v"
+module BitWiseInverter_8B_t ();
     reg[7:0] input_a, output_z;
     reg input_enable;
     reg[2:0] i;
 
-    Inverter_8B in(input_a, input_enable, output_z);
+    BitWiseInverter_8B in(input_a, input_enable, output_z);
 
     task test(input A, input E);
         if(A == 0)begin

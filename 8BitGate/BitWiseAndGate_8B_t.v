@@ -1,8 +1,8 @@
-`include "AndGate_8B.v"
-module AndGate_8B_t ();
+`include "BitWiseAndGate_8B.v"
+module BitWiseAndGate_8B_t ();
     reg[7:0] input_a, input_b, output_z;
 
-    AndGate_8B a(input_a, input_b, output_z);
+    BitWiseAndGate_8B a(input_a, input_b, output_z);
 
     task test(input[7:0] A, input[7:0] B);
         input_a = A;

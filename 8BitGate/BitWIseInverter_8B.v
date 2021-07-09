@@ -1,4 +1,4 @@
-module Inverter_8B (a, enable, z);
+module BitWiseInverter_8B (a, enable, z);
     input[7:0] a;
     input enable;
     output[7:0] z;
