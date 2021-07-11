@@ -1,4 +1,4 @@
-`include "HalfAdder_1B.v"
+//`include "HalfAdder_1B.v"
 module HalfAdder_1B_t();
     reg input_a, input_b, output_carry, output_sum;
     reg[2:0] i;

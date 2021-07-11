@@ -1,8 +1,8 @@
-`include "../8BitGate/Replicater_8B.v"
+/*`include "../8BitGate/Replicater_8B.v"
 `include "../8BitGate/BitWiseInverter_8B.v"
 `include "../8BitGate/BitWiseAndGate_8B.v"
 `include "FullAdder_8B.v"
-`include "../MUX/MUX_4to1_8B.v"
+`include "../MUX/MUX_4to1_8B.v"*/
 module ALU (a, b, s0, s1, s2, s3, s4, z, carry_out);
     input[7:0] a, b;
     input s0, s1, s2, s3, s4;

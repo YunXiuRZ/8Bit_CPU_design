@@ -1,4 +1,4 @@
-`include "FullAdder_8B.v"
+//`include "FullAdder_8B.v"
 module FullAdder_8B_t ();
     reg[7:0] input_a, input_b, output_sum;
     reg input_carry, output_carry;

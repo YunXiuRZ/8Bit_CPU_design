@@ -1,4 +1,4 @@
-`include "FullAdder_1B.v"
+//`include "FullAdder_1B.v" 
 module FullAdder_8B (a, b, carry_in, carry_out, sum);
     input[7:0] a, b;
     input carry_in;

@@ -1,4 +1,4 @@
-`include "ALU.v"
+//`include "ALU.v"
 module ALU_t ();
     reg[7:0] input_a, input_b, output_data;
     reg input_s0, input_s1, input_s2, input_s3, input_s4, output_carry;
