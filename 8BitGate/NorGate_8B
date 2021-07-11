@@ -1,0 +1,67 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7fb7e0e05040 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7fb7e0e051b0 .scope module, "NorGate_8B_t" "NorGate_8B_t" 3 2;
+ .timescale 0 0;
+v0x7fb7e0e1b6f0_0 .var "input_a", 7 0;
+v0x7fb7e0e1b780_0 .net "output_z", 0 0, L_0x7fb7e0e1b830;  1 drivers
+S_0x7fb7e0e0b160 .scope module, "n" "NorGate_8B" 3 7, 4 1 0, S_0x7fb7e0e051b0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /OUTPUT 1 "result";
+L_0x7fb7e0e1b830/0/0 .functor OR 1, L_0x7fb7e0e1ba10, L_0x7fb7e0e1bb30, L_0x7fb7e0e1bc10, L_0x7fb7e0e1bd70;
+L_0x7fb7e0e1b830/0/4 .functor OR 1, L_0x7fb7e0e1be10, L_0x7fb7e0e1beb0, L_0x7fb7e0e1bf50, L_0x7fb7e0e1c130;
+L_0x7fb7e0e1b830 .functor NOR 1, L_0x7fb7e0e1b830/0/0, L_0x7fb7e0e1b830/0/4, C4<0>, C4<0>;
+v0x7fb7e0e06320_0 .net *"_ivl_1", 0 0, L_0x7fb7e0e1ba10;  1 drivers
+v0x7fb7e0e1b010_0 .net *"_ivl_11", 0 0, L_0x7fb7e0e1beb0;  1 drivers
+v0x7fb7e0e1b0b0_0 .net *"_ivl_13", 0 0, L_0x7fb7e0e1bf50;  1 drivers
+v0x7fb7e0e1b160_0 .net *"_ivl_15", 0 0, L_0x7fb7e0e1c130;  1 drivers
+v0x7fb7e0e1b210_0 .net *"_ivl_3", 0 0, L_0x7fb7e0e1bb30;  1 drivers
+v0x7fb7e0e1b300_0 .net *"_ivl_5", 0 0, L_0x7fb7e0e1bc10;  1 drivers
+v0x7fb7e0e1b3b0_0 .net *"_ivl_7", 0 0, L_0x7fb7e0e1bd70;  1 drivers
+v0x7fb7e0e1b460_0 .net *"_ivl_9", 0 0, L_0x7fb7e0e1be10;  1 drivers
+v0x7fb7e0e1b510_0 .net "a", 7 0, v0x7fb7e0e1b6f0_0;  1 drivers
+v0x7fb7e0e1b620_0 .net "result", 0 0, L_0x7fb7e0e1b830;  alias, 1 drivers
+L_0x7fb7e0e1ba10 .part v0x7fb7e0e1b6f0_0, 7, 1;
+L_0x7fb7e0e1bb30 .part v0x7fb7e0e1b6f0_0, 6, 1;
+L_0x7fb7e0e1bc10 .part v0x7fb7e0e1b6f0_0, 5, 1;
+L_0x7fb7e0e1bd70 .part v0x7fb7e0e1b6f0_0, 4, 1;
+L_0x7fb7e0e1be10 .part v0x7fb7e0e1b6f0_0, 3, 1;
+L_0x7fb7e0e1beb0 .part v0x7fb7e0e1b6f0_0, 2, 1;
+L_0x7fb7e0e1bf50 .part v0x7fb7e0e1b6f0_0, 1, 1;
+L_0x7fb7e0e1c130 .part v0x7fb7e0e1b6f0_0, 0, 1;
+    .scope S_0x7fb7e0e051b0;
+T_0 ;
+    %vpi_call/w 3 10 "$dumpfile", "result.vcd" {0 0 0};
+    %vpi_call/w 3 11 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x7fb7e0e1b6f0_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 159, 0, 8;
+    %store/vec4 v0x7fb7e0e1b6f0_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 197, 0, 8;
+    %store/vec4 v0x7fb7e0e1b6f0_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7fb7e0e1b6f0_0, 0, 8;
+    %delay 50, 0;
+    %vpi_call/w 3 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "NorGate_8B_t.v";
+    "./NorGate_8B.v";
