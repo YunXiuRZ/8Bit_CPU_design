@@ -1,4 +1,4 @@
-`include "BitWiseInverter_8B.v"
+/*`include "BitWiseInverter_8B.v"*/
 module BitWiseInverter_8B_t ();
     reg[7:0] input_a, output_z;
     reg input_enable;
@@ -18,7 +18,7 @@ module BitWiseInverter_8B_t ();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("BitWiseInverter_8B.vcd");
         $dumpvars;
 
         for (i = 3'b000; i < 3'b100; i = i + 3'b001) begin

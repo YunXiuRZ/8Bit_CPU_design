@@ -1,0 +1,500 @@
+$date
+	Tue Jul 13 22:53:46 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Register_16B_t $end
+$var wire 16 ! output_q [15:0] $end
+$var reg 1 " clock $end
+$var reg 1 # input_clear $end
+$var reg 1 $ input_clock_enable $end
+$var reg 16 % input_d [15:0] $end
+$scope module r $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 16 & d [15:0] $end
+$var wire 8 ' q2 [7:0] $end
+$var wire 8 ( q1 [7:0] $end
+$var wire 16 ) q [15:0] $end
+$var wire 8 * d2 [7:0] $end
+$var wire 8 + d1 [7:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 8 , d [7:0] $end
+$var wire 4 - q2 [3:0] $end
+$var wire 4 . q1 [3:0] $end
+$var wire 8 / q [7:0] $end
+$var wire 4 0 d2 [3:0] $end
+$var wire 4 1 d1 [3:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 4 2 d [3:0] $end
+$var wire 4 3 q [3:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 4 d0 $end
+$var wire 1 5 d1 $end
+$var wire 1 6 q1 $end
+$var wire 1 7 q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 4 d $end
+$var reg 1 7 q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 5 d $end
+$var reg 1 6 q $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 8 d0 $end
+$var wire 1 9 d1 $end
+$var wire 1 : q1 $end
+$var wire 1 ; q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 8 d $end
+$var reg 1 ; q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 9 d $end
+$var reg 1 : q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 4 < d [3:0] $end
+$var wire 4 = q [3:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 > d0 $end
+$var wire 1 ? d1 $end
+$var wire 1 @ q1 $end
+$var wire 1 A q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 > d $end
+$var reg 1 A q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 ? d $end
+$var reg 1 @ q $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 B d0 $end
+$var wire 1 C d1 $end
+$var wire 1 D q1 $end
+$var wire 1 E q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 B d $end
+$var reg 1 E q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 C d $end
+$var reg 1 D q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 8 F d [7:0] $end
+$var wire 4 G q2 [3:0] $end
+$var wire 4 H q1 [3:0] $end
+$var wire 8 I q [7:0] $end
+$var wire 4 J d2 [3:0] $end
+$var wire 4 K d1 [3:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 4 L d [3:0] $end
+$var wire 4 M q [3:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 N d0 $end
+$var wire 1 O d1 $end
+$var wire 1 P q1 $end
+$var wire 1 Q q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 N d $end
+$var reg 1 Q q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 O d $end
+$var reg 1 P q $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 R d0 $end
+$var wire 1 S d1 $end
+$var wire 1 T q1 $end
+$var wire 1 U q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 R d $end
+$var reg 1 U q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 S d $end
+$var reg 1 T q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 4 V d [3:0] $end
+$var wire 4 W q [3:0] $end
+$scope module r1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 X d0 $end
+$var wire 1 Y d1 $end
+$var wire 1 Z q1 $end
+$var wire 1 [ q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 X d $end
+$var reg 1 [ q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 Y d $end
+$var reg 1 Z q $end
+$upscope $end
+$upscope $end
+$scope module r2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 \ d0 $end
+$var wire 1 ] d1 $end
+$var wire 1 ^ q1 $end
+$var wire 1 _ q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 \ d $end
+$var reg 1 _ q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 ] d $end
+$var reg 1 ^ q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope task test $end
+$var reg 16 ` CE [15:0] $end
+$var reg 16 a CLR [15:0] $end
+$var reg 16 b D [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11111111 b
+b0 a
+b0 `
+x_
+x^
+0]
+0\
+x[
+xZ
+0Y
+0X
+bx W
+b0 V
+xU
+xT
+0S
+0R
+xQ
+xP
+0O
+0N
+bx M
+b0 L
+b0 K
+b0 J
+bx I
+bx H
+bx G
+b0 F
+xE
+xD
+1C
+1B
+xA
+x@
+1?
+1>
+bx =
+b1111 <
+x;
+x:
+19
+18
+x7
+x6
+15
+14
+bx 3
+b1111 2
+b1111 1
+b1111 0
+bx /
+bx .
+bx -
+b11111111 ,
+b11111111 +
+b0 *
+bx )
+bx (
+bx '
+b11111111 &
+b11111111 %
+0$
+0#
+0"
+bx !
+$end
+#25
+1"
+#50
+0"
+#75
+1"
+#100
+0"
+1$
+b1 `
+#125
+b11111111 !
+b11111111 )
+b11111111 (
+b11111111 /
+b0 '
+b0 I
+17
+16
+1;
+b1111 .
+b1111 3
+1:
+1A
+1@
+1E
+b1111 -
+b1111 =
+1D
+0Q
+0P
+0U
+b0 H
+b0 M
+0T
+0[
+0Z
+0_
+b0 G
+b0 W
+0^
+1"
+#150
+0"
+#175
+1"
+#200
+04
+08
+0>
+0B
+1O
+1S
+1Y
+1]
+b1010 1
+b1010 2
+b1010 0
+b1010 <
+b1010 K
+b1010 L
+b1010 J
+b1010 V
+b10101010 +
+b10101010 ,
+b10101010 *
+b10101010 F
+0"
+b1010101010101010 %
+b1010101010101010 &
+b1010101010101010 b
+#225
+b1010101010101010 !
+b1010101010101010 )
+b10101010 (
+b10101010 /
+b10101010 '
+b10101010 I
+07
+b1010 .
+b1010 3
+0;
+0A
+b1010 -
+b1010 =
+0E
+1P
+b1010 H
+b1010 M
+1T
+1Z
+b1010 G
+b1010 W
+1^
+1"
+#250
+0"
+#275
+1"
+#300
+b0 !
+b0 )
+14
+05
+18
+09
+1>
+0?
+1B
+0C
+1N
+0O
+1R
+0S
+1X
+0Y
+1\
+0]
+b0 (
+b0 /
+b0 '
+b0 I
+b101 1
+b101 2
+b101 0
+b101 <
+b101 K
+b101 L
+b101 J
+b101 V
+06
+b0 .
+b0 3
+0:
+0@
+b0 -
+b0 =
+0D
+0P
+b0 H
+b0 M
+0T
+0Z
+b0 G
+b0 W
+0^
+b1010101 +
+b1010101 ,
+b1010101 *
+b1010101 F
+0"
+1#
+b101010101010101 %
+b101010101010101 &
+b1 a
+b101010101010101 b
+#325
+1"
+#350
+0"
+#375
+1"
+#400
+0"

@@ -24,7 +24,7 @@ module FullAdder_8B_t ();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("FullAdder_8B.vcd");
         $dumpvars;
 
 

@@ -1,4 +1,4 @@
-`include "Register_2B.v"
+/*`include "Register_2B.v"*/
 module Register_4B (d, clock, clock_enable, clear, q);
     input[3:0] d;
     input clock, clock_enable, clear;

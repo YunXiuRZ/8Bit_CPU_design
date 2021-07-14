@@ -1,4 +1,4 @@
-`include "Register_8B.v"
+/*`include "Register_8B.v"*/
 module Register_8B_t ();
     reg[7:0] input_d, output_q;
     reg clock, input_clock_enable, input_clear;
@@ -14,7 +14,7 @@ module Register_8B_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("Register_8B.vcd");
         $dumpvars;
 
         test(8'b00000000, 0, 0);

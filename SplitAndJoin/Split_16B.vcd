@@ -1,0 +1,30 @@
+$date
+	Tue Jul 13 21:21:42 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Split_16B_t $end
+$var wire 8 ! output_low [7:0] $end
+$var wire 8 " output_high [7:0] $end
+$var reg 16 # input_a [15:0] $end
+$scope module s $end
+$var wire 16 $ a [15:0] $end
+$var wire 8 % low [7:0] $end
+$var wire 8 & high [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11110000 &
+b10100101 %
+b1111000010100101 $
+b1111000010100101 #
+b11110000 "
+b10100101 !
+$end
+#50

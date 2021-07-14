@@ -1,4 +1,4 @@
-`include "Register_16B.v"
+/*`include "Register_16B.v"*/
 module Register_16B_t ();
     reg[15:0] input_d, output_q;
     reg clock, input_clock_enable, input_clear;
@@ -14,7 +14,7 @@ module Register_16B_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("Register_16B.vcd");
         $dumpvars;
 
         test(16'b0000000011111111, 0, 0);

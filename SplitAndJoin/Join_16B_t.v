@@ -1,4 +1,4 @@
-`include "Join_16B.v"
+/*`include "Join_16B.v"*/
 module Join_16B_t ();
     
     reg[7:0] input_low, input_high;
@@ -7,7 +7,7 @@ module Join_16B_t ();
     Join_16B j(input_low, input_high, output_z);
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("Join_16B.vcd");
         $dumpvars;
 
         input_low = 8'b1010_0000;

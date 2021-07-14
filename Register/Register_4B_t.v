@@ -1,4 +1,4 @@
-`include "Register_4B.v"
+/*`include "Register_4B.v"*/
 module Register_4B_t ();
     reg[3:0] input_d, output_q;
     reg clock, input_clock_enable, input_clear;
@@ -14,7 +14,7 @@ module Register_4B_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("Register_4B.vcd");
         $dumpvars;
 
         test(4'b0000, 0, 0);

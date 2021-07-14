@@ -1,0 +1,29 @@
+$date
+	Tue Jul 13 21:11:14 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Replicater_8B_t $end
+$var wire 8 ! output_z [7:0] $end
+$var reg 1 " input_a $end
+$scope module b $end
+$var wire 1 " a $end
+$var wire 8 # z [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 #
+0"
+b0 !
+$end
+#100
+b11111111 !
+b11111111 #
+1"
+#200

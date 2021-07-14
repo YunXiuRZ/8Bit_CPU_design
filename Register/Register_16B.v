@@ -1,4 +1,4 @@
-`include "Register_8B.v"
+/*`include "Register_8B.v"*/
 module Register_16B (d, clock, clock_enable, clear, q);
     input[15:0] d;
     input clock, clock_enable, clear;

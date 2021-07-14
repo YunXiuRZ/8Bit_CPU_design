@@ -1,0 +1,79 @@
+$date
+	Tue Jul 13 23:03:09 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RAM_t $end
+$var wire 16 ! output_dout [15:0] $end
+$var reg 8 " input_addr [7:0] $end
+$var reg 16 # input_din [15:0] $end
+$var reg 1 $ input_we $end
+$scope module r $end
+$var wire 8 % addr [7:0] $end
+$var wire 16 & din [15:0] $end
+$var wire 1 $ we $end
+$var reg 16 ' dout [15:0] $end
+$upscope $end
+$scope task test $end
+$var reg 8 ( ADDR [7:0] $end
+$var reg 16 ) D [15:0] $end
+$var reg 1 * WE $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1*
+b1010000000001010 )
+b0 (
+b1010000000000110 '
+b1010000000001010 &
+b0 %
+1$
+b1010000000001010 #
+b0 "
+b1010000000000110 !
+$end
+#100
+b1010000000001010 !
+b1010000000001010 '
+0$
+b100000000001010 #
+b100000000001010 &
+0*
+b100000000001010 )
+#200
+b100000000001010 !
+b100000000001010 '
+b1 "
+b1 %
+b1001110000000100 #
+b1001110000000100 &
+b1 (
+b1001110000000100 )
+#300
+1$
+1*
+#400
+b1010000000001010 !
+b1010000000001010 '
+b0 "
+b0 %
+b1110000000001010 #
+b1110000000001010 &
+b0 (
+b1110000000001010 )
+#500
+b1001110000000100 !
+b1001110000000100 '
+b1 "
+b1 %
+b1000000000000000 #
+b1000000000000000 &
+b1 (
+b1000000000000000 )
+#600

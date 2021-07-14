@@ -1,0 +1,109 @@
+$date
+	Tue Jul 13 22:45:58 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Register_2B_t $end
+$var wire 2 ! output_q [1:0] $end
+$var reg 1 " clock $end
+$var reg 1 # input_clear $end
+$var reg 1 $ input_clock_enable $end
+$var reg 2 % input_d [1:0] $end
+$scope module r $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 & d0 $end
+$var wire 1 ' d1 $end
+$var wire 1 ( q1 $end
+$var wire 1 ) q0 $end
+$scope module f1 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 & d $end
+$var reg 1 ) q $end
+$upscope $end
+$scope module f2 $end
+$var wire 1 # clear $end
+$var wire 1 " clock $end
+$var wire 1 $ clock_enable $end
+$var wire 1 ' d $end
+$var reg 1 ( q $end
+$upscope $end
+$upscope $end
+$scope task test $end
+$var reg 2 * CE [1:0] $end
+$var reg 2 + CLR [1:0] $end
+$var reg 2 , D [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 ,
+b0 +
+b0 *
+x)
+x(
+0'
+0&
+b0 %
+0$
+0#
+0"
+bx !
+$end
+#25
+1"
+#50
+0"
+#75
+1"
+#100
+0"
+1$
+b1 *
+#125
+0)
+b0 !
+0(
+1"
+#150
+0"
+#175
+1"
+#200
+1&
+1'
+0"
+b11 %
+b11 ,
+#225
+1)
+b11 !
+1(
+1"
+#250
+0"
+#275
+1"
+#300
+0)
+b0 !
+0(
+0"
+1#
+b1 +
+#325
+1"
+#350
+0"
+#375
+1"
+#400
+0"

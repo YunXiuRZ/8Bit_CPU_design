@@ -1,4 +1,4 @@
-`include "Register_2B.v"
+/*`include "Register_2B.v"*/
 module Register_2B_t ();
     reg[1:0] input_d, output_q;
     reg clock, input_clock_enable, input_clear;
@@ -14,7 +14,7 @@ module Register_2B_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("Register_2B.vcd");
         $dumpvars;
 
         test(2'b00, 0, 0);

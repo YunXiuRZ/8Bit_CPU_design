@@ -1,0 +1,61 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7f94c78041c0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7f94c7804340 .scope module, "Replicater_8B_t" "Replicater_8B_t" 3 2;
+ .timescale 0 0;
+v0x7f94c7814e50_0 .var "input_a", 0 0;
+v0x7f94c7814ee0_0 .net "output_z", 7 0, L_0x7f94c7815540;  1 drivers
+S_0x7f94c78044c0 .scope module, "b" "Replicater_8B" 3 6, 4 1 0, S_0x7f94c7804340;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /OUTPUT 8 "z";
+L_0x7f94c7814f70 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c7815040 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c78150c0 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c78151f0 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c7815260 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c7815300 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c7815370 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+L_0x7f94c7815760 .functor BUFZ 1, v0x7f94c7814e50_0, C4<0>, C4<0>, C4<0>;
+v0x7f94c78046b0_0 .net *"_ivl_11", 0 0, L_0x7f94c78150c0;  1 drivers
+v0x7f94c7814770_0 .net *"_ivl_15", 0 0, L_0x7f94c78151f0;  1 drivers
+v0x7f94c7814810_0 .net *"_ivl_19", 0 0, L_0x7f94c7815260;  1 drivers
+v0x7f94c78148c0_0 .net *"_ivl_23", 0 0, L_0x7f94c7815300;  1 drivers
+v0x7f94c7814970_0 .net *"_ivl_27", 0 0, L_0x7f94c7815370;  1 drivers
+v0x7f94c7814a60_0 .net *"_ivl_3", 0 0, L_0x7f94c7814f70;  1 drivers
+v0x7f94c7814b10_0 .net *"_ivl_32", 0 0, L_0x7f94c7815760;  1 drivers
+v0x7f94c7814bc0_0 .net *"_ivl_7", 0 0, L_0x7f94c7815040;  1 drivers
+v0x7f94c7814c70_0 .net "a", 0 0, v0x7f94c7814e50_0;  1 drivers
+v0x7f94c7814d80_0 .net "z", 7 0, L_0x7f94c7815540;  alias, 1 drivers
+LS_0x7f94c7815540_0_0 .concat8 [ 1 1 1 1], L_0x7f94c7814f70, L_0x7f94c7815040, L_0x7f94c78150c0, L_0x7f94c78151f0;
+LS_0x7f94c7815540_0_4 .concat8 [ 1 1 1 1], L_0x7f94c7815260, L_0x7f94c7815300, L_0x7f94c7815370, L_0x7f94c7815760;
+L_0x7f94c7815540 .concat8 [ 4 4 0 0], LS_0x7f94c7815540_0_0, LS_0x7f94c7815540_0_4;
+    .scope S_0x7f94c7804340;
+T_0 ;
+    %vpi_call/w 3 10 "$dumpfile", "Replicater_8B.vcd" {0 0 0};
+    %vpi_call/w 3 11 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7f94c7814e50_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7f94c7814e50_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call/w 3 18 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "Replicater_8B_t.v";
+    "Replicater_8B.v";

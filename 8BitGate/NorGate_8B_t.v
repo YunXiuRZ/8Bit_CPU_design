@@ -1,4 +1,4 @@
-`include "NorGate_8B.v"
+/*`include "NorGate_8B.v"*/
 module NorGate_8B_t ();
 
     reg[7:0] input_a;
@@ -7,7 +7,7 @@ module NorGate_8B_t ();
     NorGate_8B n(input_a, output_z);
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("NorGate_8B.vcd");
         $dumpvars;
 
         input_a = 8'b0000_0000;#50

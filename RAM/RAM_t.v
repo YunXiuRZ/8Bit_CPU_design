@@ -1,4 +1,4 @@
-`include "RAM.v"
+/*`include "RAM.v"*/
 module RAM_t ();
     
     reg [15:0] input_din, output_dout;
@@ -18,7 +18,7 @@ module RAM_t ();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("RAM.vcd");
         $dumpvars;
 
         test(16'b1010_0000_0000_1010, 8'b0000_0000, 1);

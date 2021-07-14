@@ -15,7 +15,7 @@ module ALU_t ();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("ALU.vcd");
         $dumpvars;
 
         input_a = 8'b11111000;

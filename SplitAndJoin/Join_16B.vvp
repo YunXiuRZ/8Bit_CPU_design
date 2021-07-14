@@ -1,0 +1,81 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7f90ddf09ab0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7f90ddf09db0 .scope module, "Join_16B_t" "Join_16B_t" 3 2;
+ .timescale 0 0;
+v0x7f90ddf1ad40_0 .var "input_high", 7 0;
+v0x7f90ddf1add0_0 .var "input_low", 7 0;
+v0x7f90ddf1ae60_0 .net "output_z", 15 0, L_0x7f90ddf1bda0;  1 drivers
+S_0x7f90ddf09f20 .scope module, "j" "Join_16B" 3 7, 4 1 0, S_0x7f90ddf09db0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "low";
+    .port_info 1 /INPUT 8 "high";
+    .port_info 2 /OUTPUT 16 "result";
+v0x7f90ddf09520_0 .net *"_ivl_11", 0 0, L_0x7f90ddf1b090;  1 drivers
+v0x7f90ddf19f20_0 .net *"_ivl_15", 0 0, L_0x7f90ddf1b1f0;  1 drivers
+v0x7f90ddf19fd0_0 .net *"_ivl_19", 0 0, L_0x7f90ddf1b290;  1 drivers
+v0x7f90ddf1a090_0 .net *"_ivl_23", 0 0, L_0x7f90ddf1b360;  1 drivers
+v0x7f90ddf1a140_0 .net *"_ivl_27", 0 0, L_0x7f90ddf1b400;  1 drivers
+v0x7f90ddf1a230_0 .net *"_ivl_3", 0 0, L_0x7f90ddf1aef0;  1 drivers
+v0x7f90ddf1a2e0_0 .net *"_ivl_31", 0 0, L_0x7f90ddf1b600;  1 drivers
+v0x7f90ddf1a390_0 .net *"_ivl_35", 0 0, L_0x7f90ddf1b6a0;  1 drivers
+v0x7f90ddf1a440_0 .net *"_ivl_39", 0 0, L_0x7f90ddf1b790;  1 drivers
+v0x7f90ddf1a550_0 .net *"_ivl_43", 0 0, L_0x7f90ddf1b830;  1 drivers
+v0x7f90ddf1a600_0 .net *"_ivl_47", 0 0, L_0x7f90ddf1b9b0;  1 drivers
+v0x7f90ddf1a6b0_0 .net *"_ivl_51", 0 0, L_0x7f90ddf1ba50;  1 drivers
+v0x7f90ddf1a760_0 .net *"_ivl_55", 0 0, L_0x7f90ddf1bb60;  1 drivers
+v0x7f90ddf1a810_0 .net *"_ivl_59", 0 0, L_0x7f90ddf1bc00;  1 drivers
+v0x7f90ddf1a8c0_0 .net *"_ivl_64", 0 0, L_0x7f90ddf1c0d0;  1 drivers
+v0x7f90ddf1a970_0 .net *"_ivl_7", 0 0, L_0x7f90ddf1aff0;  1 drivers
+v0x7f90ddf1aa20_0 .net "high", 7 0, v0x7f90ddf1ad40_0;  1 drivers
+v0x7f90ddf1abb0_0 .net "low", 7 0, v0x7f90ddf1add0_0;  1 drivers
+v0x7f90ddf1ac40_0 .net "result", 15 0, L_0x7f90ddf1bda0;  alias, 1 drivers
+L_0x7f90ddf1aef0 .part v0x7f90ddf1ad40_0, 7, 1;
+L_0x7f90ddf1aff0 .part v0x7f90ddf1ad40_0, 6, 1;
+L_0x7f90ddf1b090 .part v0x7f90ddf1ad40_0, 5, 1;
+L_0x7f90ddf1b1f0 .part v0x7f90ddf1ad40_0, 4, 1;
+L_0x7f90ddf1b290 .part v0x7f90ddf1ad40_0, 3, 1;
+L_0x7f90ddf1b360 .part v0x7f90ddf1ad40_0, 2, 1;
+L_0x7f90ddf1b400 .part v0x7f90ddf1ad40_0, 1, 1;
+L_0x7f90ddf1b600 .part v0x7f90ddf1ad40_0, 0, 1;
+L_0x7f90ddf1b6a0 .part v0x7f90ddf1add0_0, 7, 1;
+L_0x7f90ddf1b790 .part v0x7f90ddf1add0_0, 6, 1;
+L_0x7f90ddf1b830 .part v0x7f90ddf1add0_0, 5, 1;
+L_0x7f90ddf1b9b0 .part v0x7f90ddf1add0_0, 4, 1;
+L_0x7f90ddf1ba50 .part v0x7f90ddf1add0_0, 3, 1;
+L_0x7f90ddf1bb60 .part v0x7f90ddf1add0_0, 2, 1;
+L_0x7f90ddf1bc00 .part v0x7f90ddf1add0_0, 1, 1;
+LS_0x7f90ddf1bda0_0_0 .concat8 [ 1 1 1 1], L_0x7f90ddf1c0d0, L_0x7f90ddf1bc00, L_0x7f90ddf1bb60, L_0x7f90ddf1ba50;
+LS_0x7f90ddf1bda0_0_4 .concat8 [ 1 1 1 1], L_0x7f90ddf1b9b0, L_0x7f90ddf1b830, L_0x7f90ddf1b790, L_0x7f90ddf1b6a0;
+LS_0x7f90ddf1bda0_0_8 .concat8 [ 1 1 1 1], L_0x7f90ddf1b600, L_0x7f90ddf1b400, L_0x7f90ddf1b360, L_0x7f90ddf1b290;
+LS_0x7f90ddf1bda0_0_12 .concat8 [ 1 1 1 1], L_0x7f90ddf1b1f0, L_0x7f90ddf1b090, L_0x7f90ddf1aff0, L_0x7f90ddf1aef0;
+L_0x7f90ddf1bda0 .concat8 [ 4 4 4 4], LS_0x7f90ddf1bda0_0_0, LS_0x7f90ddf1bda0_0_4, LS_0x7f90ddf1bda0_0_8, LS_0x7f90ddf1bda0_0_12;
+L_0x7f90ddf1c0d0 .part v0x7f90ddf1add0_0, 0, 1;
+    .scope S_0x7f90ddf09db0;
+T_0 ;
+    %vpi_call/w 3 10 "$dumpfile", "Join_16B.vcd" {0 0 0};
+    %vpi_call/w 3 11 "$dumpvars" {0 0 0};
+    %pushi/vec4 160, 0, 8;
+    %store/vec4 v0x7f90ddf1add0_0, 0, 8;
+    %pushi/vec4 92, 0, 8;
+    %store/vec4 v0x7f90ddf1ad40_0, 0, 8;
+    %delay 50, 0;
+    %vpi_call/w 3 17 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "Join_16B_t.v";
+    "Join_16B.v";

@@ -1,0 +1,35 @@
+$date
+	Tue Jul 13 21:11:14 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module NorGate_8B_t $end
+$var wire 1 ! output_z $end
+$var reg 8 " input_a [7:0] $end
+$scope module n $end
+$var wire 8 # a [7:0] $end
+$var wire 1 ! result $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 #
+b0 "
+1!
+$end
+#50
+0!
+b10011111 "
+b10011111 #
+#100
+b11000101 "
+b11000101 #
+#150
+b11111111 "
+b11111111 #
+#200

@@ -1,4 +1,4 @@
-`include "BitWiseAndGate_8B.v"
+/*`include "BitWiseAndGate_8B.v"*/
 module BitWiseAndGate_8B_t ();
     reg[7:0] input_a, input_b, output_z;
 
@@ -11,7 +11,7 @@ module BitWiseAndGate_8B_t ();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("BitWiseAndGate_8B.vcd");
         $dumpvars;
 
         test(8'b00000000, 8'b00000000);

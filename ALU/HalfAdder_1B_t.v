@@ -12,7 +12,7 @@ module HalfAdder_1B_t();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("HalfAdder_1B.vcd");
         $dumpvars;
 
         for (i = 3'b000; i < 3'b100; i = i + 3'b001) begin

@@ -1,4 +1,4 @@
-`include "MUX_2to1_8B.v"
+//`include "MUX_2to1_8B.v"
 module MUX_4to1_8B (
 	input[7:0] a,
 	input[7:0] b,

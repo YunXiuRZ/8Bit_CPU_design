@@ -1,0 +1,80 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7feed7d05b90 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7feed7d05d00 .scope module, "Split_16B_t" "Split_16B_t" 3 2;
+ .timescale 0 0;
+v0x7feed7d21bb0_0 .var "input_a", 15 0;
+v0x7feed7d21c40_0 .net "output_high", 7 0, L_0x7feed7d22470;  1 drivers
+v0x7feed7d21cd0_0 .net "output_low", 7 0, L_0x7feed7d22330;  1 drivers
+S_0x7feed7d11150 .scope module, "s" "Split_16B" 3 7, 4 1 0, S_0x7feed7d05d00;
+ .timescale 0 0;
+    .port_info 0 /INPUT 16 "a";
+    .port_info 1 /OUTPUT 8 "low";
+    .port_info 2 /OUTPUT 8 "high";
+v0x7feed7d09b90_0 .net *"_ivl_11", 0 0, L_0x7feed7d21f00;  1 drivers
+v0x7feed7d20d90_0 .net *"_ivl_15", 0 0, L_0x7feed7d22060;  1 drivers
+v0x7feed7d20e40_0 .net *"_ivl_19", 0 0, L_0x7feed7d22100;  1 drivers
+v0x7feed7d20f00_0 .net *"_ivl_23", 0 0, L_0x7feed7d221d0;  1 drivers
+v0x7feed7d20fb0_0 .net *"_ivl_27", 0 0, L_0x7feed7d22270;  1 drivers
+v0x7feed7d210a0_0 .net *"_ivl_3", 0 0, L_0x7feed7d21d60;  1 drivers
+v0x7feed7d21150_0 .net *"_ivl_32", 0 0, L_0x7feed7d22690;  1 drivers
+v0x7feed7d21200_0 .net *"_ivl_36", 0 0, L_0x7feed7d227c0;  1 drivers
+v0x7feed7d212b0_0 .net *"_ivl_40", 0 0, L_0x7feed7d22860;  1 drivers
+v0x7feed7d213c0_0 .net *"_ivl_44", 0 0, L_0x7feed7d22960;  1 drivers
+v0x7feed7d21470_0 .net *"_ivl_48", 0 0, L_0x7feed7d22a00;  1 drivers
+v0x7feed7d21520_0 .net *"_ivl_52", 0 0, L_0x7feed7d22b10;  1 drivers
+v0x7feed7d215d0_0 .net *"_ivl_56", 0 0, L_0x7feed7d22bb0;  1 drivers
+v0x7feed7d21680_0 .net *"_ivl_60", 0 0, L_0x7feed7d22cd0;  1 drivers
+v0x7feed7d21730_0 .net *"_ivl_65", 0 0, L_0x7feed7d23100;  1 drivers
+v0x7feed7d217e0_0 .net *"_ivl_7", 0 0, L_0x7feed7d21e60;  1 drivers
+v0x7feed7d21890_0 .net "a", 15 0, v0x7feed7d21bb0_0;  1 drivers
+v0x7feed7d21a20_0 .net "high", 7 0, L_0x7feed7d22470;  alias, 1 drivers
+v0x7feed7d21ab0_0 .net "low", 7 0, L_0x7feed7d22330;  alias, 1 drivers
+L_0x7feed7d21d60 .part v0x7feed7d21bb0_0, 15, 1;
+L_0x7feed7d21e60 .part v0x7feed7d21bb0_0, 14, 1;
+L_0x7feed7d21f00 .part v0x7feed7d21bb0_0, 13, 1;
+L_0x7feed7d22060 .part v0x7feed7d21bb0_0, 12, 1;
+L_0x7feed7d22100 .part v0x7feed7d21bb0_0, 11, 1;
+L_0x7feed7d221d0 .part v0x7feed7d21bb0_0, 10, 1;
+L_0x7feed7d22270 .part v0x7feed7d21bb0_0, 9, 1;
+LS_0x7feed7d22470_0_0 .concat8 [ 1 1 1 1], L_0x7feed7d22690, L_0x7feed7d22270, L_0x7feed7d221d0, L_0x7feed7d22100;
+LS_0x7feed7d22470_0_4 .concat8 [ 1 1 1 1], L_0x7feed7d22060, L_0x7feed7d21f00, L_0x7feed7d21e60, L_0x7feed7d21d60;
+L_0x7feed7d22470 .concat8 [ 4 4 0 0], LS_0x7feed7d22470_0_0, LS_0x7feed7d22470_0_4;
+L_0x7feed7d22690 .part v0x7feed7d21bb0_0, 8, 1;
+L_0x7feed7d227c0 .part v0x7feed7d21bb0_0, 7, 1;
+L_0x7feed7d22860 .part v0x7feed7d21bb0_0, 6, 1;
+L_0x7feed7d22960 .part v0x7feed7d21bb0_0, 5, 1;
+L_0x7feed7d22a00 .part v0x7feed7d21bb0_0, 4, 1;
+L_0x7feed7d22b10 .part v0x7feed7d21bb0_0, 3, 1;
+L_0x7feed7d22bb0 .part v0x7feed7d21bb0_0, 2, 1;
+L_0x7feed7d22cd0 .part v0x7feed7d21bb0_0, 1, 1;
+LS_0x7feed7d22330_0_0 .concat8 [ 1 1 1 1], L_0x7feed7d23100, L_0x7feed7d22cd0, L_0x7feed7d22bb0, L_0x7feed7d22b10;
+LS_0x7feed7d22330_0_4 .concat8 [ 1 1 1 1], L_0x7feed7d22a00, L_0x7feed7d22960, L_0x7feed7d22860, L_0x7feed7d227c0;
+L_0x7feed7d22330 .concat8 [ 4 4 0 0], LS_0x7feed7d22330_0_0, LS_0x7feed7d22330_0_4;
+L_0x7feed7d23100 .part v0x7feed7d21bb0_0, 0, 1;
+    .scope S_0x7feed7d05d00;
+T_0 ;
+    %vpi_call/w 3 10 "$dumpfile", "Split_16B.vcd" {0 0 0};
+    %vpi_call/w 3 11 "$dumpvars" {0 0 0};
+    %pushi/vec4 61605, 0, 16;
+    %store/vec4 v0x7feed7d21bb0_0, 0, 16;
+    %delay 50, 0;
+    %vpi_call/w 3 16 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "Split_16B_t.v";
+    "Split_16B.v";

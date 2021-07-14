@@ -1,0 +1,125 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2009.vpi";
+S_0x7fb54d405fa0 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0x7fb54d406110 .scope module, "BitWiseAndGate_8B_t" "BitWiseAndGate_8B_t" 3 2;
+ .timescale 0 0;
+v0x7fb54d423e90_0 .var "input_a", 7 0;
+v0x7fb54d423f60_0 .var "input_b", 7 0;
+v0x7fb54d424010_0 .net "output_z", 7 0, L_0x7fb54d425580;  1 drivers
+S_0x7fb54d412c80 .scope module, "a" "BitWiseAndGate_8B" 3 5, 4 1 0, S_0x7fb54d406110;
+ .timescale 0 0;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /INPUT 8 "b";
+    .port_info 2 /OUTPUT 8 "z";
+L_0x7fb54d4240e0 .functor AND 1, L_0x7fb54d4241d0, L_0x7fb54d4242f0, C4<1>, C4<1>;
+L_0x7fb54d424410 .functor AND 1, L_0x7fb54d424480, L_0x7fb54d424560, C4<1>, C4<1>;
+L_0x7fb54d424640 .functor AND 1, L_0x7fb54d424730, L_0x7fb54d4248c0, C4<1>, C4<1>;
+L_0x7fb54d4249e0 .functor AND 1, L_0x7fb54d424a50, L_0x7fb54d424b70, C4<1>, C4<1>;
+L_0x7fb54d424c50 .functor AND 1, L_0x7fb54d424cc0, L_0x7fb54d424df0, C4<1>, C4<1>;
+L_0x7fb54d424e90 .functor AND 1, L_0x7fb54d424f20, L_0x7fb54d425060, C4<1>, C4<1>;
+L_0x7fb54d425140 .functor AND 1, L_0x7fb54d4251f0, L_0x7fb54d424810, C4<1>, C4<1>;
+L_0x7fb54d4253d0 .functor AND 1, L_0x7fb54d4257e0, L_0x7fb54d4258c0, C4<1>, C4<1>;
+v0x7fb54d408be0_0 .net *"_ivl_0", 0 0, L_0x7fb54d4240e0;  1 drivers
+v0x7fb54d422860_0 .net *"_ivl_11", 0 0, L_0x7fb54d424560;  1 drivers
+v0x7fb54d422910_0 .net *"_ivl_12", 0 0, L_0x7fb54d424640;  1 drivers
+v0x7fb54d4229d0_0 .net *"_ivl_15", 0 0, L_0x7fb54d424730;  1 drivers
+v0x7fb54d422a80_0 .net *"_ivl_17", 0 0, L_0x7fb54d4248c0;  1 drivers
+v0x7fb54d422b70_0 .net *"_ivl_18", 0 0, L_0x7fb54d4249e0;  1 drivers
+v0x7fb54d422c20_0 .net *"_ivl_21", 0 0, L_0x7fb54d424a50;  1 drivers
+v0x7fb54d422cd0_0 .net *"_ivl_23", 0 0, L_0x7fb54d424b70;  1 drivers
+v0x7fb54d422d80_0 .net *"_ivl_24", 0 0, L_0x7fb54d424c50;  1 drivers
+v0x7fb54d422e90_0 .net *"_ivl_27", 0 0, L_0x7fb54d424cc0;  1 drivers
+v0x7fb54d422f40_0 .net *"_ivl_29", 0 0, L_0x7fb54d424df0;  1 drivers
+v0x7fb54d422ff0_0 .net *"_ivl_3", 0 0, L_0x7fb54d4241d0;  1 drivers
+v0x7fb54d4230a0_0 .net *"_ivl_30", 0 0, L_0x7fb54d424e90;  1 drivers
+v0x7fb54d423150_0 .net *"_ivl_33", 0 0, L_0x7fb54d424f20;  1 drivers
+v0x7fb54d423200_0 .net *"_ivl_35", 0 0, L_0x7fb54d425060;  1 drivers
+v0x7fb54d4232b0_0 .net *"_ivl_36", 0 0, L_0x7fb54d425140;  1 drivers
+v0x7fb54d423360_0 .net *"_ivl_39", 0 0, L_0x7fb54d4251f0;  1 drivers
+v0x7fb54d4234f0_0 .net *"_ivl_41", 0 0, L_0x7fb54d424810;  1 drivers
+v0x7fb54d423580_0 .net *"_ivl_42", 0 0, L_0x7fb54d4253d0;  1 drivers
+v0x7fb54d423630_0 .net *"_ivl_46", 0 0, L_0x7fb54d4257e0;  1 drivers
+v0x7fb54d4236e0_0 .net *"_ivl_48", 0 0, L_0x7fb54d4258c0;  1 drivers
+v0x7fb54d423790_0 .net *"_ivl_5", 0 0, L_0x7fb54d4242f0;  1 drivers
+v0x7fb54d423840_0 .net *"_ivl_6", 0 0, L_0x7fb54d424410;  1 drivers
+v0x7fb54d4238f0_0 .net *"_ivl_9", 0 0, L_0x7fb54d424480;  1 drivers
+v0x7fb54d4239a0_0 .net "a", 7 0, v0x7fb54d423e90_0;  1 drivers
+v0x7fb54d423a50_0 .net "b", 7 0, v0x7fb54d423f60_0;  1 drivers
+v0x7fb54d423b00_0 .net "z", 7 0, L_0x7fb54d425580;  alias, 1 drivers
+L_0x7fb54d4241d0 .part v0x7fb54d423e90_0, 0, 1;
+L_0x7fb54d4242f0 .part v0x7fb54d423f60_0, 0, 1;
+L_0x7fb54d424480 .part v0x7fb54d423e90_0, 1, 1;
+L_0x7fb54d424560 .part v0x7fb54d423f60_0, 1, 1;
+L_0x7fb54d424730 .part v0x7fb54d423e90_0, 2, 1;
+L_0x7fb54d4248c0 .part v0x7fb54d423f60_0, 2, 1;
+L_0x7fb54d424a50 .part v0x7fb54d423e90_0, 3, 1;
+L_0x7fb54d424b70 .part v0x7fb54d423f60_0, 3, 1;
+L_0x7fb54d424cc0 .part v0x7fb54d423e90_0, 4, 1;
+L_0x7fb54d424df0 .part v0x7fb54d423f60_0, 4, 1;
+L_0x7fb54d424f20 .part v0x7fb54d423e90_0, 5, 1;
+L_0x7fb54d425060 .part v0x7fb54d423f60_0, 5, 1;
+L_0x7fb54d4251f0 .part v0x7fb54d423e90_0, 6, 1;
+L_0x7fb54d424810 .part v0x7fb54d423f60_0, 6, 1;
+LS_0x7fb54d425580_0_0 .concat8 [ 1 1 1 1], L_0x7fb54d4240e0, L_0x7fb54d424410, L_0x7fb54d424640, L_0x7fb54d4249e0;
+LS_0x7fb54d425580_0_4 .concat8 [ 1 1 1 1], L_0x7fb54d424c50, L_0x7fb54d424e90, L_0x7fb54d425140, L_0x7fb54d4253d0;
+L_0x7fb54d425580 .concat8 [ 4 4 0 0], LS_0x7fb54d425580_0_0, LS_0x7fb54d425580_0_4;
+L_0x7fb54d4257e0 .part v0x7fb54d423e90_0, 7, 1;
+L_0x7fb54d4258c0 .part v0x7fb54d423f60_0, 7, 1;
+S_0x7fb54d423c00 .scope task, "test" "test" 3 7, 3 7 0, S_0x7fb54d406110;
+ .timescale 0 0;
+v0x7fb54d423d70_0 .var "A", 7 0;
+v0x7fb54d423e00_0 .var "B", 7 0;
+TD_BitWiseAndGate_8B_t.test ;
+    %load/vec4 v0x7fb54d423d70_0;
+    %store/vec4 v0x7fb54d423e90_0, 0, 8;
+    %load/vec4 v0x7fb54d423e00_0;
+    %store/vec4 v0x7fb54d423f60_0, 0, 8;
+    %delay 100, 0;
+    %end;
+    .scope S_0x7fb54d406110;
+T_1 ;
+    %vpi_call/w 3 14 "$dumpfile", "BitWiseAndGate_8B.vcd" {0 0 0};
+    %vpi_call/w 3 15 "$dumpvars" {0 0 0};
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x7fb54d423d70_0, 0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0x7fb54d423e00_0, 0, 8;
+    %fork TD_BitWiseAndGate_8B_t.test, S_0x7fb54d423c00;
+    %join;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7fb54d423d70_0, 0, 8;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7fb54d423e00_0, 0, 8;
+    %fork TD_BitWiseAndGate_8B_t.test, S_0x7fb54d423c00;
+    %join;
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v0x7fb54d423d70_0, 0, 8;
+    %pushi/vec4 240, 0, 8;
+    %store/vec4 v0x7fb54d423e00_0, 0, 8;
+    %fork TD_BitWiseAndGate_8B_t.test, S_0x7fb54d423c00;
+    %join;
+    %pushi/vec4 60, 0, 8;
+    %store/vec4 v0x7fb54d423d70_0, 0, 8;
+    %pushi/vec4 102, 0, 8;
+    %store/vec4 v0x7fb54d423e00_0, 0, 8;
+    %fork TD_BitWiseAndGate_8B_t.test, S_0x7fb54d423c00;
+    %join;
+    %vpi_call/w 3 22 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "BitWiseAndGate_8B_t.v";
+    "BitWiseAndGate_8B.v";

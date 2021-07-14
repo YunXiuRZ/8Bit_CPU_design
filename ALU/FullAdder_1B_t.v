@@ -13,7 +13,7 @@ module FullAdder_1B_t ();
     endtask
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("FullAdder_1B.vcd");
         $dumpvars;
 
         for (i = 4'b0000; i < 4'b1000; i = i + 4'b0001) begin
