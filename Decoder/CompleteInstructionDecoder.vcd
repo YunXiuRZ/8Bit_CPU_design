@@ -1,0 +1,408 @@
+$date
+	Thu Jul 15 22:40:50 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module CompleteInstructionDecoder_t $end
+$var wire 1 ! output_sub $end
+$var wire 1 " output_op $end
+$var wire 1 # output_load $end
+$var wire 1 $ output_jumpz $end
+$var wire 1 % output_jumpnz $end
+$var wire 1 & output_jumpnc $end
+$var wire 1 ' output_jumpc $end
+$var wire 1 ( output_jump $end
+$var wire 1 ) output_ip $end
+$var wire 1 * output_bitand $end
+$var wire 1 + output_add $end
+$var wire 1 , increment $end
+$var wire 1 - fetch $end
+$var wire 1 . execute $end
+$var wire 1 / decode $end
+$var reg 1 0 clock $end
+$var reg 8 1 input_a [7:0] $end
+$var reg 1 2 input_clear $end
+$var reg 1 3 input_clock_enable $end
+$scope module CID $end
+$var wire 8 4 a [7:0] $end
+$var wire 1 + add $end
+$var wire 1 * bitand $end
+$var wire 1 5 enable $end
+$var wire 1 ) ip $end
+$var wire 1 ( jump $end
+$var wire 1 ' jumpc $end
+$var wire 1 & jumpnc $end
+$var wire 1 % jumpnz $end
+$var wire 1 $ jumpz $end
+$var wire 1 # load $end
+$var wire 1 " op $end
+$var wire 1 ! sub $end
+$var wire 1 6 wsub $end
+$var wire 1 7 wop $end
+$var wire 1 8 wload $end
+$var wire 1 9 wjumpz $end
+$var wire 1 : wjumpnz $end
+$var wire 1 ; wjumpnc $end
+$var wire 1 < wjumpc $end
+$var wire 1 = wjump $end
+$var wire 1 > wip $end
+$var wire 1 ? wbitand $end
+$var wire 1 @ wadd $end
+$var wire 1 . execute $end
+$var wire 1 / decode $end
+$scope module ID $end
+$var wire 8 A a [7:0] $end
+$var reg 1 @ add $end
+$var reg 1 ? bitand $end
+$var reg 1 > ip $end
+$var reg 1 = jump $end
+$var reg 1 < jumpc $end
+$var reg 1 ; jumpnc $end
+$var reg 1 : jumpnz $end
+$var reg 1 9 jumpz $end
+$var reg 1 8 load $end
+$var reg 1 7 op $end
+$var reg 1 6 sub $end
+$scope task jump_condition $end
+$var reg 1 B a2 $end
+$var reg 1 C a3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module SG $end
+$var wire 1 2 clear $end
+$var wire 1 0 clock $end
+$var wire 1 3 clock_enable $end
+$var reg 1 / decode $end
+$var reg 1 . execute $end
+$var reg 1 - fetch $end
+$var reg 1 , increment $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xC
+xB
+bx A
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+05
+bx 4
+13
+12
+bx 1
+00
+0/
+0.
+1-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#20
+10
+#40
+00
+#60
+10
+#80
+00
+#100
+1#
+15
+1/
+0-
+0?
+06
+0;
+0<
+0:
+09
+0=
+0@
+18
+07
+0>
+10
+b0 1
+b0 4
+b0 A
+02
+#120
+00
+#140
+1.
+0/
+10
+#160
+00
+#180
+0#
+05
+1,
+0.
+10
+#200
+1@
+08
+00
+b1000000 1
+b1000000 4
+b1000000 A
+#220
+1-
+0,
+10
+#240
+00
+#260
+1+
+15
+1/
+0-
+10
+#280
+00
+#300
+1*
+0+
+1.
+0/
+1?
+0@
+10
+b10000 1
+b10000 4
+b10000 A
+#320
+00
+#340
+0*
+05
+1,
+0.
+10
+#360
+00
+#380
+1-
+0,
+10
+#400
+0?
+16
+00
+b1100000 1
+b1100000 4
+b1100000 A
+#420
+1!
+15
+1/
+0-
+10
+#440
+00
+#460
+1.
+0/
+10
+#480
+00
+#500
+05
+0!
+0)
+1,
+0.
+06
+1>
+10
+b10100000 1
+b10100000 4
+b10100000 A
+#520
+00
+#540
+1-
+0,
+10
+#560
+00
+#580
+1)
+15
+1/
+0-
+10
+#600
+1"
+0)
+17
+0>
+00
+b11100000 1
+b11100000 4
+b11100000 A
+#620
+1.
+0/
+10
+#640
+00
+#660
+0"
+05
+1,
+0.
+10
+#680
+00
+#700
+1-
+0,
+1=
+07
+10
+b10000000 1
+b10000000 4
+b10000000 A
+#720
+00
+#740
+1(
+15
+1/
+0-
+10
+#760
+00
+#780
+1.
+0/
+10
+#800
+1$
+0(
+19
+0B
+0C
+0=
+00
+b10010000 1
+b10010000 4
+b10010000 A
+#820
+0$
+05
+1,
+0.
+10
+#840
+00
+#860
+1-
+0,
+10
+#880
+00
+#900
+1'
+15
+1/
+0-
+1<
+09
+1C
+10
+b10011000 1
+b10011000 4
+b10011000 A
+#920
+00
+#940
+1.
+0/
+10
+#960
+00
+#980
+0'
+05
+1,
+0.
+10
+#1000
+0<
+1:
+1B
+0C
+00
+b10010100 1
+b10010100 4
+b10010100 A
+#1020
+1-
+0,
+10
+#1040
+00
+#1060
+1%
+15
+1/
+0-
+10
+#1080
+00
+#1100
+1&
+0%
+1.
+0/
+1;
+0:
+1C
+10
+b10011100 1
+b10011100 4
+b10011100 A
+#1120
+00
+#1140
+0&
+05
+1,
+0.
+10
+#1160
+00
+#1180
+1-
+0,
+10
+#1200
+00

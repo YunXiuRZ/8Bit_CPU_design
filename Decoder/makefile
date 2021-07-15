@@ -12,11 +12,11 @@ SequenceGenerator.vvp : ../FlipFlop/FDCE.v ../FlipFlop/FDPE.v SequenceGenerator.
 InstructionDecoder.vvp : InstructionDecoder.v InstructionDecoder_t.v
 	iverilog $(version) -o InstructionDecoder.vvp InstructionDecoder.v InstructionDecoder_t.v
 
-CompleteInstructionDecoder.vvp : InstructionDecoder.v CompleteInstructionDecoder.v SequenceGenerator.v CompleteInstructionDecoder_t
-	iverilog $(version) -o CompleteInstructionDecoder.vvp InstructionDecoder.v CompleteInstructionDecoder.v SequenceGenerator.v CompleteInstructionDecoder_t
+CompleteInstructionDecoder.vvp : InstructionDecoder.v CompleteInstructionDecoder.v SequenceGenerator.v CompleteInstructionDecoder_t.v
+	iverilog $(version) -o CompleteInstructionDecoder.vvp InstructionDecoder.v CompleteInstructionDecoder.v SequenceGenerator.v CompleteInstructionDecoder_t.v
 
 JumpLogic.vvp : ../FlipFlop/FDC.v JumpLogic.v JumpLogic_t.v
 	iverilog $(version) -o JumpLogic.vvp ../FlipFlop/FDC.v JumpLogic.v JumpLogic_t.v
 
-Decoder.vvp : StatusRegister.v CompleteInstructionDecoder.v JumpLogic.v SequenceGenerator.v Decoder.v Decoder_t.v
-	iverilog $(version) -o Decoder.vvp StatusRegister.v CompleteInstructionDecoder.v JumpLogic.v SequenceGenerator.v Decoder.v Decoder_t.v
+Decoder.vvp : ../Register/Register_2B.v StatusRegister.v InstructionDecoder.v CompleteInstructionDecoder.v ../FlipFlop/FDC.v JumpLogic.v ../FlipFlop/FDCE.v ../FlipFlop/FDPE.v SequenceGenerator.v Decoder.v Decoder_t.v
+	iverilog $(version) -o Decoder.vvp ../Register/Register_2B.v StatusRegister.v InstructionDecoder.v CompleteInstructionDecoder.v ../FlipFlop/FDC.v JumpLogic.v ../FlipFlop/FDCE.v ../FlipFlop/FDPE.v SequenceGenerator.v Decoder.v Decoder_t.v

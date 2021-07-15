@@ -1,0 +1,201 @@
+$date
+	Thu Jul 15 22:39:16 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module JumpLogic_t $end
+$var wire 1 ! output_en_pc $end
+$var reg 1 " clock $end
+$var reg 1 # input_carry_reg $end
+$var reg 1 $ input_clear $end
+$var reg 1 % input_execute $end
+$var reg 1 & input_increment $end
+$var reg 1 ' input_jump $end
+$var reg 1 ( input_jumpc $end
+$var reg 1 ) input_jumpnc $end
+$var reg 1 * input_jumpnz $end
+$var reg 1 + input_jumpz $end
+$var reg 1 , input_zero_reg $end
+$scope module jl $end
+$var wire 1 - c1 $end
+$var wire 1 . c2 $end
+$var wire 1 / c3 $end
+$var wire 1 0 c4 $end
+$var wire 1 # carry_reg $end
+$var wire 1 $ clear $end
+$var wire 1 " clock $end
+$var wire 1 1 condition $end
+$var wire 1 2 ec $end
+$var wire 1 ! en_pc $end
+$var wire 1 % execute $end
+$var wire 1 3 ic $end
+$var wire 1 & increment $end
+$var wire 1 ' jump $end
+$var wire 1 ( jumpc $end
+$var wire 1 ) jumpnc $end
+$var wire 1 * jumpnz $end
+$var wire 1 + jumpz $end
+$var wire 1 4 nc $end
+$var wire 1 5 ncondition $end
+$var wire 1 6 nz $end
+$var wire 1 , zero_reg $end
+$var wire 1 7 jump_not_taken $end
+$scope module fdc $end
+$var wire 1 $ clear $end
+$var wire 1 " clock $end
+$var wire 1 5 d $end
+$var reg 1 7 q $end
+$upscope $end
+$upscope $end
+$scope task test $end
+$var reg 1 8 CR $end
+$var reg 1 9 E $end
+$var reg 1 : I $end
+$var reg 1 ; J $end
+$var reg 1 < JC $end
+$var reg 1 = JNC $end
+$var reg 1 > JNZ $end
+$var reg 1 ? JZ $end
+$var reg 1 @ ZR $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1@
+1?
+0>
+0=
+0<
+0;
+0:
+19
+08
+x7
+06
+05
+14
+03
+12
+11
+00
+0/
+0.
+1-
+1,
+1+
+0*
+0)
+0(
+0'
+0&
+1%
+0$
+0#
+0"
+1!
+$end
+#25
+07
+1"
+#50
+15
+01
+0!
+16
+0-
+02
+0"
+0,
+0+
+0%
+0@
+0?
+09
+#75
+17
+1"
+#100
+1!
+05
+12
+11
+1.
+0"
+1*
+1%
+1>
+19
+#125
+07
+1"
+#150
+15
+01
+0!
+0.
+02
+0"
+0*
+0%
+0>
+09
+#175
+17
+1"
+#200
+05
+11
+04
+1/
+0"
+1#
+1(
+18
+1<
+#225
+07
+1"
+#250
+15
+01
+14
+0/
+0"
+0#
+0(
+08
+0<
+#275
+17
+1"
+#300
+05
+11
+10
+0"
+1)
+1=
+#325
+07
+1"
+#350
+15
+01
+00
+0"
+0)
+1&
+0=
+1:
+#375
+1!
+13
+17
+1"
+#400
+0"

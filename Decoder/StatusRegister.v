@@ -1,4 +1,4 @@
-`include "../Register/Register_2B.v"
+//`include "../Register/Register_2B.v"
 module StatusRegister (
     carry,
     zero,
