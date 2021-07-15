@@ -1,4 +1,4 @@
-`include "MUX_4to1_8B.v"
+//`include "MUX_4to1_8B.v"
 module MUX_4to1_8B_t;
 	reg input_select1, input_select2;
 	reg[7:0] output_result;
@@ -17,14 +17,14 @@ module MUX_4to1_8B_t;
 	endtask
 
 	initial begin
-		$dumpfile("result.vcd");
+		$dumpfile("MUX_4to1_8B.vcd");
 		$dumpvars;
 
 		test(8'b00000000, 8'b11110000, 8'b00001111, 8'b11111111, 1'b0, 1'b0);
 		test(8'b00000000, 8'b11110000, 8'b00001111, 8'b11111111, 1'b1, 1'b0);
 		test(8'b00000000, 8'b11110000, 8'b00001111, 8'b11111111, 1'b0, 1'b1);
 		test(8'b00000000, 8'b11110000, 8'b00001111, 8'b11111111, 1'b1, 1'b1);
-		$finish
+		$finish;
 		
 		
 	end

@@ -1,0 +1,378 @@
+$date
+	Thu Jul 15 21:56:43 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module MUX_2to1_8B_t $end
+$var wire 8 ! output_result [7:0] $end
+$var reg 8 " input_a [7:0] $end
+$var reg 8 # input_b [7:0] $end
+$var reg 1 $ input_select $end
+$scope module M $end
+$var wire 8 % a [7:0] $end
+$var wire 8 & b [7:0] $end
+$var wire 1 $ select $end
+$var wire 8 ' result [7:0] $end
+$scope module m1 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 * result $end
+$var wire 1 $ select $end
+$var wire 1 + w1 $end
+$var wire 1 , w2 $end
+$var wire 1 - w3 $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 . a $end
+$var wire 1 / b $end
+$var wire 1 0 result $end
+$var wire 1 $ select $end
+$var wire 1 1 w1 $end
+$var wire 1 2 w2 $end
+$var wire 1 3 w3 $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 4 a $end
+$var wire 1 5 b $end
+$var wire 1 6 result $end
+$var wire 1 $ select $end
+$var wire 1 7 w1 $end
+$var wire 1 8 w2 $end
+$var wire 1 9 w3 $end
+$upscope $end
+$scope module m4 $end
+$var wire 1 : a $end
+$var wire 1 ; b $end
+$var wire 1 < result $end
+$var wire 1 $ select $end
+$var wire 1 = w1 $end
+$var wire 1 > w2 $end
+$var wire 1 ? w3 $end
+$upscope $end
+$scope module m5 $end
+$var wire 1 @ a $end
+$var wire 1 A b $end
+$var wire 1 B result $end
+$var wire 1 $ select $end
+$var wire 1 C w1 $end
+$var wire 1 D w2 $end
+$var wire 1 E w3 $end
+$upscope $end
+$scope module m6 $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 H result $end
+$var wire 1 $ select $end
+$var wire 1 I w1 $end
+$var wire 1 J w2 $end
+$var wire 1 K w3 $end
+$upscope $end
+$scope module m7 $end
+$var wire 1 L a $end
+$var wire 1 M b $end
+$var wire 1 N result $end
+$var wire 1 $ select $end
+$var wire 1 O w1 $end
+$var wire 1 P w2 $end
+$var wire 1 Q w3 $end
+$upscope $end
+$scope module m8 $end
+$var wire 1 R a $end
+$var wire 1 S b $end
+$var wire 1 T result $end
+$var wire 1 $ select $end
+$var wire 1 U w1 $end
+$var wire 1 V w2 $end
+$var wire 1 W w3 $end
+$upscope $end
+$upscope $end
+$scope task test $end
+$var reg 8 X a [7:0] $end
+$var reg 8 Y b [7:0] $end
+$var reg 1 Z select $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0Z
+b0 Y
+b0 X
+0W
+0V
+1U
+0T
+0S
+0R
+0Q
+0P
+1O
+0N
+0M
+0L
+0K
+0J
+1I
+0H
+0G
+0F
+0E
+0D
+1C
+0B
+0A
+0@
+0?
+0>
+1=
+0<
+0;
+0:
+09
+08
+17
+06
+05
+04
+03
+02
+11
+00
+0/
+0.
+0-
+0,
+1+
+0*
+0)
+0(
+b0 '
+b0 &
+b0 %
+0$
+b0 #
+b0 "
+b0 !
+$end
+#100
+1*
+10
+16
+1<
+1B
+1H
+1N
+b11111111 !
+b11111111 '
+1T
+1,
+12
+18
+1>
+1D
+1J
+1P
+1V
+1(
+1.
+14
+1:
+1@
+1F
+1L
+1R
+b11111111 "
+b11111111 %
+b11111111 X
+#200
+0*
+00
+06
+0<
+0B
+0H
+0N
+b0 !
+b0 '
+0T
+0,
+02
+08
+0>
+0D
+0J
+0P
+0V
+1)
+1/
+15
+1;
+1A
+1G
+1M
+1S
+0(
+0.
+04
+0:
+0@
+0F
+0L
+0R
+b11111111 #
+b11111111 &
+b0 "
+b0 %
+b11111111 Y
+b0 X
+#300
+1*
+10
+16
+1<
+1B
+1H
+1N
+b11111111 !
+b11111111 '
+1T
+1,
+12
+18
+1>
+1D
+1J
+1P
+1V
+1(
+1.
+14
+1:
+1@
+1F
+1L
+1R
+b11111111 "
+b11111111 %
+b11111111 X
+#400
+0*
+00
+06
+0<
+0B
+0H
+0N
+b0 !
+b0 '
+0T
+0,
+02
+08
+0>
+0D
+0J
+0P
+0V
+0+
+01
+07
+0=
+0C
+0I
+0O
+0U
+0)
+0/
+05
+0;
+0A
+0G
+0M
+0S
+0(
+0.
+04
+0:
+0@
+0F
+0L
+0R
+1$
+b0 #
+b0 &
+b0 "
+b0 %
+1Z
+b0 Y
+b0 X
+#500
+1(
+1.
+14
+1:
+1@
+1F
+1L
+1R
+b11111111 "
+b11111111 %
+b11111111 X
+#600
+1*
+10
+16
+1<
+1B
+1H
+1N
+b11111111 !
+b11111111 '
+1T
+1-
+13
+19
+1?
+1E
+1K
+1Q
+1W
+1)
+1/
+15
+1;
+1A
+1G
+1M
+1S
+0(
+0.
+04
+0:
+0@
+0F
+0L
+0R
+b11111111 #
+b11111111 &
+b0 "
+b0 %
+b11111111 Y
+b0 X
+#700
+1(
+1.
+14
+1:
+1@
+1F
+1L
+1R
+b11111111 "
+b11111111 %
+b11111111 X
+#800

@@ -1,4 +1,4 @@
-`include "MUX_2to1_8B.v"
+/*`include "MUX_2to1_8B.v"*/
 module MUX_2to1_8B_t;
 	reg input_select;
 	reg[7:0] output_result;
@@ -14,7 +14,7 @@ module MUX_2to1_8B_t;
 	MUX_2to1_8B M(input_a, input_b, input_select, output_result);
 
 	initial begin
-		$dumpfile("result.vcd");
+		$dumpfile("MUX_2to1_8B.vcd");
 		$dumpvars;
 
 		test(8'b00000000, 8'b00000000, 1'b0);
@@ -25,7 +25,7 @@ module MUX_2to1_8B_t;
 		test(8'b11111111, 8'b00000000, 1'b1);
 		test(8'b00000000, 8'b11111111, 1'b1);
 		test(8'b11111111, 8'b11111111, 1'b1);
-		$finish
+		$finish;
 		
 	end
 

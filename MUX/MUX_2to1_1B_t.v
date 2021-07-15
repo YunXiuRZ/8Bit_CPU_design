@@ -1,4 +1,4 @@
-`include "MUX_2to1_1B.v"
+/*`include "MUX_2to1_1B.v"*/
 module MUX_2to1_1B_t;
 	reg output_result, input_a, input_b, input_select;
 	
@@ -13,23 +13,24 @@ module MUX_2to1_1B_t;
 	endtask
 
 	initial begin
-		$dumpfile("result.vcd");
+		$dumpfile("MUX_2to1_1B.vcd");
 		$dumpvars;
 
-		integer i;
+		/*integer i = 3'b000;
 		for (i = 3'b000; i <= 3'b111; i = i + 3'b001) begin
 			test(i[0], i[1], i[2]);
-		end
-		$finish
+		end*/
 
-		/*test(1'b0, 1'b0, 1'b0);
+		test(1'b0, 1'b0, 1'b0);
 		test(1'b1, 1'b0, 1'b0);
 		test(1'b0, 1'b1, 1'b0);
 		test(1'b1, 1'b1, 1'b0);
 		test(1'b0, 1'b0, 1'b1);
 		test(1'b1, 1'b0, 1'b1);
 		test(1'b0, 1'b1, 1'b1);
-		test(1'b1, 1'b1, 1'b1);*/
+		test(1'b1, 1'b1, 1'b1);
+
+		$finish;
 	end
 
 
