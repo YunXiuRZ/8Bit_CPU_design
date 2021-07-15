@@ -1,4 +1,4 @@
-`include "Decoder.v"
+//`include "Decoder.v"
 module Decoder_t ();
     reg[7:0] ip_IR;
     reg ip_carry, ip_zero, clock, ip_clock_enable, ip_clear;
@@ -24,7 +24,7 @@ module Decoder_t ();
     op_ALU_s4);
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("Decoder.vcd");
         $dumpvars;
         ip_clear = 1;
         clock = 0;

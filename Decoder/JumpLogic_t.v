@@ -1,4 +1,4 @@
-`include "JumpLogic.v"
+//`include "JumpLogic.v"
 module JumpLogic_t ();
     reg input_increment, 
         input_execute,
@@ -42,7 +42,7 @@ module JumpLogic_t ();
     initial begin
         clock = 0;
         input_clear = 1;
-        $dumpfile("result.vcd");
+        $dumpfile("JumpLogic.vcd");
         $dumpvars();
         input_clear = 0;
 

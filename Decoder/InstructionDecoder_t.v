@@ -1,4 +1,4 @@
-`include "InstructionDecoder.v"
+//`include "InstructionDecoder.v"
 module InstructionDecoder_t ();
     reg[7:0] input_a;
     reg output_ip, 
@@ -26,7 +26,7 @@ module InstructionDecoder_t ();
         output_bitand);
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("InstructionDecoder.vcd");
         $dumpvars;
         input_a = 8'b00000000;
         #50;

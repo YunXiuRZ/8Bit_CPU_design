@@ -1,4 +1,4 @@
-`include "FDC.v"
+//`include "FDC.v"
 module FDC_t ();
     reg input_d, input_clear, output_q, clock;
 
@@ -12,7 +12,7 @@ module FDC_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("FDC.vcd");
         $dumpvars;
 
         test(0, 0);

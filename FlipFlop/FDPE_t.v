@@ -1,4 +1,4 @@
-`include "FDPE.v"
+//`include "FDPE.v"
 module FDPE_t ();
     reg input_d, input_clock_enable, input_preset, output_q, clock;
 
@@ -13,7 +13,7 @@ module FDPE_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("FDPE.vcd");
         $dumpvars;
 
         test(1, 1, 0);

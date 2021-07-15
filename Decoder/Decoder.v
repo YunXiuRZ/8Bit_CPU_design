@@ -1,7 +1,7 @@
-`include "StatusRegister.v"
+/*`include "StatusRegister.v"
 `include "CompleteInstructionDecoder.v"
 `include "JumpLogic.v"
-`include "SequenceGenerator.v"
+`include "SequenceGenerator.v"*/
 module Decoder (
     IR,
     carry,

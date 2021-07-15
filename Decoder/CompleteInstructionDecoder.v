@@ -1,4 +1,4 @@
-`include "InstructionDecoder.v"
+//`include "InstructionDecoder.v"
 module CompleteInstructionDecoder (a, decode, execute, ip, op, load, add, jump, jumpz, jumpnz, jumpc, jumpnc, sub, bitand);
     input [7:0] a;
     input decode, execute;

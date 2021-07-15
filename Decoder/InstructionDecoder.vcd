@@ -1,0 +1,117 @@
+$date
+	Thu Jul 15 22:29:40 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module InstructionDecoder_t $end
+$var wire 1 ! output_sub $end
+$var wire 1 " output_op $end
+$var wire 1 # output_load $end
+$var wire 1 $ output_jumpz $end
+$var wire 1 % output_jumpnz $end
+$var wire 1 & output_jumpnc $end
+$var wire 1 ' output_jumpc $end
+$var wire 1 ( output_jump $end
+$var wire 1 ) output_ip $end
+$var wire 1 * output_bitand $end
+$var wire 1 + output_add $end
+$var reg 8 , input_a [7:0] $end
+$scope module id $end
+$var wire 8 - a [7:0] $end
+$var reg 1 + add $end
+$var reg 1 * bitand $end
+$var reg 1 ) ip $end
+$var reg 1 ( jump $end
+$var reg 1 ' jumpc $end
+$var reg 1 & jumpnc $end
+$var reg 1 % jumpnz $end
+$var reg 1 $ jumpz $end
+$var reg 1 # load $end
+$var reg 1 " op $end
+$var reg 1 ! sub $end
+$scope task jump_condition $end
+$var reg 1 . a2 $end
+$var reg 1 / a3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x/
+x.
+b0 -
+b0 ,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+1#
+0"
+0!
+$end
+#50
+1+
+0#
+b1000000 ,
+b1000000 -
+#100
+1*
+0+
+b10000 ,
+b10000 -
+#150
+0*
+1!
+b1100000 ,
+b1100000 -
+#200
+0!
+1)
+b10100000 ,
+b10100000 -
+#250
+1"
+0)
+b11100000 ,
+b11100000 -
+#300
+1(
+0"
+b10000000 ,
+b10000000 -
+#350
+1$
+0.
+0/
+0(
+b10010000 ,
+b10010000 -
+#400
+1'
+0$
+1/
+b10011000 ,
+b10011000 -
+#450
+0'
+1%
+1.
+0/
+b10010100 ,
+b10010100 -
+#500
+1&
+0%
+1/
+b10011100 ,
+b10011100 -
+#550

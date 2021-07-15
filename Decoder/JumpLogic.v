@@ -1,4 +1,4 @@
-`include "../FlipFlop/FDC.v"
+//`include "../FlipFlop/FDC.v"
 module JumpLogic (
     increment,
     execute,

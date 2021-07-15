@@ -1,5 +1,5 @@
-`include "SequenceGenerator.v"
-`include "CompleteInstructionDecoder.v"
+/*`include "SequenceGenerator.v"
+`include "CompleteInstructionDecoder.v"*/
 module CompleteInstructionDecoder_t ();
     reg[7:0] input_a;
     reg clock,
@@ -41,7 +41,7 @@ module CompleteInstructionDecoder_t ();
         output_bitand);
 
     initial begin
-        $dumpfile("result.vcd");
+        $dumpfile("CompleteInstructionDecoder.vcd");
         $dumpvars;
 
         clock = 0;

@@ -1,4 +1,4 @@
-`include "SequenceGenerator.v"
+//`include "SequenceGenerator.v"
 module SequenceGenerator_t ();
     reg clock, 
         input_clock_enable, 
@@ -24,7 +24,7 @@ module SequenceGenerator_t ();
 
     initial begin
         clock = 0;
-        $dumpfile("result.vcd");
+        $dumpfile("SequenceGenerator.vcd");
         $dumpvars;
 
         test(1, 1);
