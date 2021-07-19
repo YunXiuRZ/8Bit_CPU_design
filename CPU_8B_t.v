@@ -15,6 +15,8 @@ module CPU_8B_t ();
         #100;
         input_nclear = 1;
 
+        #6000;
+        $finish;
     end
 
     always #50 begin

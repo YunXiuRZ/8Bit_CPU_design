@@ -29,7 +29,7 @@ reg[7:0] A0 = 8'b0000_0000;
 
 not n1(clear, nclear);
 FD fd(clear, clock, FD_o);
-Register_16B ir(RAM_o, clock, en_in, FDo, IR);
+Register_16B ir(RAM_o, clock, en_in, FD_o, IR);
 Split_16B s1(IR, IR_l, IR_h);
 Split_16B s2(RAM_o, RAM_l, RAM_h);
 Register_8B pc(ALU_o, clock, en_pc, clear, PC_o);

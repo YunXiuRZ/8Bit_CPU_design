@@ -31,22 +31,26 @@ module RAM(
     Jump NC aa : 1001 11XX AAAAAAAA*/
 
     initial begin
-        data_ram[0] = 16'b1010_0000_00000110;
-        data_ram[1] = 16'b0100_0000_00001010;
-        data_ram[2] = 16'b1001_0100_00000100;
-        data_ram[3] = 16'b0000_0000_11111111;
-        data_ram[4] = 16'b1110_0000_00000111;
-        data_ram[5] = 16'b1000_0000_00000000;
-        data_ram[6] = 16'b0000_0000_11111010;
-        data_ram[7] = 16'b0000_0000_00000000;
+        data_ram[0] = 16'b1010_0000_00000110;//Input ACC 6
+        data_ram[1] = 16'b0100_0000_00001010;//Add ACC 10
+        data_ram[2] = 16'b1001_1100_00000100;//Jump NC 4
+        data_ram[3] = 16'b0000_0000_11111111;//Load ACC 255
+        data_ram[4] = 16'b1110_0000_00000111;//Output ACC 7
+        data_ram[5] = 16'b1000_0000_00001000;//Jump 8
+        data_ram[6] = 16'b0000_0000_11111010;//Data 250
+        data_ram[7] = 16'b0000_0000_00000000;//Data 0
+        data_ram[8] = 16'b1010_0000_00000110;//Input ACC 6
+        data_ram[9] = 16'b0100_0000_00000101;//Add ACC 5
+        data_ram[10] = 16'b1000_0000_00000010;//Jump 2
     end
 
     always @(posedge clock) begin
-        dout = data_ram[addr];
         if ( we == 1'b1 ) 
         begin
             data_ram[addr] = din;
         end
+        dout = data_ram[addr];
+        
     end
 
 endmodule 
