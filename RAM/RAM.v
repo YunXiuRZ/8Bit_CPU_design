@@ -40,13 +40,13 @@ module RAM(
         data_ram[7] = 16'b0000_0000_00000000;
     end
 
-    always @ (addr or we)
-    begin
-        dout = data_ram[addr];
+    always @(posedge clock) begin
         if ( we == 1'b1 ) 
         begin
             data_ram[addr] = din;
         end
+        dout = data_ram[addr];
+        
     end
 
 endmodule 
